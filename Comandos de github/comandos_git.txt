@@ -1,0 +1,48 @@
+- git init (es para trabajar en el working directory)
+- git status (para ver que archivos o documentos etamos trabajando)
+- git add nombre_del_archivo (agregas los cambios realizados en un archivo)
+- git add . (de esta forma agregas todos los cambios realizados)
+- git commit (primer punto de partida o primero cambio)
+- git log (no muesta un hass o un id por cada commit que e echo)
+  Nota: al usar el comando git log en el apartado HEAD -> master nos indica en que vercion nos encontramos
+  para salir de un git log puedes precionar la tecla q.
+- git checkout --nombre_del_archivo (para desacer los cambios antes de hacer un commit)
+- git restore Nombre_del_archivo (para desacer los cambios antes de hacer un commit)
+- git diff (si quisiera ver las diferencias que se an agregado en el archivo modificado)
+- git commit -m "el mensaje a agregar" (de esta manera evitamos que nos aparesca el editor de texto vin)
+Uso de comando branch
+- git branch (de esta menera podemos ver las verciones alternativa)
+- git branch Nombre_de_nueva_vercion (de seta manera definimos una nueva vercion alternativa)
+- git checkout nombre_de_la_vercion (con este comando podemos cambiar de vercion)
+
+-----------------------------------
+configuracion personal par indicarle a git quien soy 
+
+git config --global user.email"halexander_2033@hotmail.com"
+git config --global use.name"Milton Hernandez"
+
+-------------------------------------
+comando de vin (editor de texto)
+
+para incertar texto precionas la letra "i"
+para dejar de incertar texto precionas la tecla "esc"
+para gurdar los cambios ":wq"
+
+----------------------------------------
+para excluir carpetas o archivos que no quiero tabajar desde git
+
+creamos un archivo en la carpeta del proyecto con el nombre .gitignore 
+dentro de dicho archivo podemos agregar carpetas o archivoc solo que con los archivos se agrega la extencion
+
+-------------------------------------
+TODO GIYHUB
+--------------------------------------
+
+paras subir el repocitorio a GitHub
+
+git remote add origin Ladireccion_url_de_el_repocitorio (despues de aver cereado el repocitorio en GitHub)
+git push -u (este comando empesaeremos a suvir el codigo)
+git push -u origin master (este comando empesaeremos a suvir el codigo)
+git push heroku master
+git clone direccion_del_repositorio (des esta manera clonamos el proyecto en otra pc)
+---------------------------------------
