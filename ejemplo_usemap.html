@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="description" content="Uso del atributo usempa y la etiqueta map">
+    <meta name="keywords" content="map, usemap, img, alt, width, heigth, src">
+    <meta name="description" content="Ejemplos con HTML5">
+    <title>Uso del atributo usemap y de la etiqueta map</title>
+</head>
+
+<body>
+    <h1>Ejemplo con el uso de la etiqueta map y el atributo usemap aplicado a la etiqueta img</h1>
+    <img src="/imagenes/1.jpg" alt="Imagen de la tri fuerza" usemap="#mapa1" width="300" height="200">
+    <!-- aca definimos las cordenadas la imagen con la etiqueta map -->
+    <map name="mapa1">
+        <area shape="rect" coords="310,61,410,133" href="/imagenes/1.jpg" alt="imagen de link" title="Imagen de Link">
+    </map>
+</body>
+
+</html>

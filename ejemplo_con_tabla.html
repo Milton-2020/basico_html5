@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="description" content="uso de la etiqueta Table">
+    <meta name="keywords" content="table, th, tr, td, colspan, caption, border, colgroup, col, thead, tbody, tfoot">
+    <meta name="generator" content="Ejemplos con html5">
+    <title>Ejemplo con tabla</title>
+</head>
+
+<body>
+    <h2>Ejemplo con columnas combinadas mediante el atributo colspan</h2>
+    <table border="1">
+        <caption>Titulo de la tabla</caption>
+        <tr>
+            <th colspan="2">columna combinada</th>
+            <th>Celda normal</th>
+            <th colspan="2">columna combinada</th>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+            <td>C4</td>
+            <td>C5</td>
+        </tr>
+        <tr>
+            <td>C6</td>
+            <td>C7</td>
+            <td>C8</td>
+            <td colspan="2">C9 combinada</td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+    <h2>Ejemplo con filas conbinadas mediante el atributo rowspam</h2>
+    <table border="1">
+        <caption>Filas Combinadas</caption>
+        <tr>
+            <th>Celda 1</th>
+            <th>Celda 2</th>
+            <th>Celda 3</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Celda combinada</td>
+            <td>Celda 5</td>
+            <td rowspan="2">Celda combinada</td>
+        </tr>
+        <tr>
+            <td>Celda 7</td>
+        </tr>
+    </table>
+    <h2>combinacion de filas y columnas formado asi tablas que combinen celdas</h2>
+    <table border="1">
+        <caption>Combinacion de celdas</caption>
+        <tr>
+            <th>Celda 1</th>
+            <th>Celda 2</th>
+            <th>Celda 3</th>
+            <th>Celda 4</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Celda 5</td>
+            <td>Celda 6</td>
+            <td colspan="2">Celda 7</td>
+        </tr>
+        <tr>
+            <td>Celda 8</td>
+            <td>Celda 9</td>
+            <td rowspan="2">Celda 10</td>
+        </tr>
+        <tr>
+            <td colspan="2">Celda 11</td>
+        </tr>
+    </table>
+    <h2>Ejemplo de tabla avanzada</h2>
+    <table border="1" style="width: 100%;">
+        <caption>Tabla avanzada</caption>
+
+        <colgroup>
+            <col style="width: 20%;">
+            <col style="width: 40%;">
+            <col style="width: 40%;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2">Tabla Avanzada</th>
+                <th colspan="2">Cabecera Múltiple Columna</th>
+            </tr>
+            <tr>
+                <th>Primer Columna</th>
+                <th>Segunda Columna</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Pie de la Tabla</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <th>Fila 1</th>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+            </tr>
+            <tr>
+                <th>Fila 2</th>
+                <td>Fila 2 Columna 1</td>
+                <td>Fila 2 Colimna 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

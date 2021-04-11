@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="description" content="ejemplos de la etiqueta img">
+    <meta name="keywords" content="img, src, height, width, ismap, usemap">
+    <meta name="generator" content="Ejemplos desarrollados en HTML5">
+    <title>Uso de la etiqueta img y sus atributos</title>
+</head>
+
+<body>
+    <h1>Uso de la etiqueta IMG permite definir una imagen en el documento</h1>
+    <p>tecnicamente la imagen no se inserta en la pagina web sino se genera un en lace a la misma y el navegador se encarga de situalrla en el documento web</p>
+    <p>dentro de los formatos mas usados se puede usar Jpeg, png entre otros mas. Se a de tener encuenta que el tamaño de la imagen influye en la carga del documento web, por lo tanto se suele preparar la imagen para reducir su peso</p>
+    <p><strong>Nota: </strong>esta estiqueta no cuenta con etiqueta de cierre</p>
+    <br>
+    <hr>
+    <h3>Uso del atributo SRC</h3>
+    <p>dicho atributo permite especificar el origen de la imagen o ruta de donde esta alojada la imagen, mediante una ruta absoluta o relativa</p>
+    <h3>Uso del atributo HEIGTH</h3>
+    <p>Este atributo perimte definir el alto de la imagen en pixeles, siempre que se especifique el ancho y el alto el navegador reservara ese espacio correspondiente para la imagen</p>
+    <p>si no se espesifica el tamlo de la imagen el navegador no reserbara ese espacio por lo tanto esperara ala carga completa de la imagen</p>
+    <h3>Uso del atributo WIDTH</h3>
+    <p>dicho atributo permite especificar el ancho de la imagen con un valor numerico en pixeles</p>
+    <h3>Uso del atributo ALT</h3>
+    <p>permite definir un texto aleatorio para la imagen, algunos navegadores visualizan este texto como una pequeña ventana emergente</p>
+    <p>este mensaje se muestra cuando se hay algun problema con el atributo src o por la conexion muy lenta</p>
+    <h3>Uso del atributo ISMAP</h3>
+    <p>dicho atributo se usa para, indicar que la imagen tiene zonas seleccionable que sirven como enlaces</p>
+    <p>el atributo solo puede existir si la etiqueta img es decendiente de una etiqueta enlace, el atributo ismap es un booleano es decir no tiene valor asociado</p>
+    <p>si aparece en una etiqueta img indica que es un mapa de imagen</p>
+    <h3>Uso del atributo USEMAP</h3>
+    <p>permite especificar que la imagen utiliza un mapa de imagen con zonas seleccionables asociado a etiqueta con un mapa de imagen definido en la etiqueta map</p>
+    <p>el atributo usemap no es permitido si la etiqueta img es decendiente de un enlace o botón</p>
+    <p>la etiqueta map permite definir zonas rectangulares, circulares o poligonales</p>
+    <br>
+    <br>
+    <a tabindex="1" dir="ltr" href="/ejemplo_img.html">Ir a Ejemplo de IMG</a>
+    <br>
+    <a tabindex="2" href="/ejemplo_usemap.html">Ejemplo con el atributo usemap</a>
+</body>
+
+</html>
