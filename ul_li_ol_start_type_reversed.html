@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="description" content="Uso de las etiqutas ul, ol y li">
+    <meta name="keywords" content="ul, ol, li, type, start, reversed">
+    <meta name="generator" content="Ejemplos desarrollados en HTML5">
+    <title>Uso de la etiquetas OL, UL y LI</title>
+</head>
+
+<body>
+    <h1 dir="rtl">Uso de las etiquetas UL, OL y LI</h1>
+    <hr>
+    <h2>Uso de la etiqueta <mark>UL</mark></h2>
+    <p>Dicha etiqueta nos permite definir una lista desordenada <i>(Unordered List)</i> esta etiqueta a su ves es contenedora de:</p>
+    <p>la etiqueta <u>LI</u> siendo esta etiqueta la que compone acada uno de los elemntos que compone una lista</p>
+    <p><strong>NOTA: </strong>una lista puede a su bes contener otra lista a esto se le conoce como listas anidadas</p>
+    <h3>Lista con elementos desordenados</h3>
+    <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ul>
+    <h3>Lista con sublista anidada</h3>
+    <ul>
+        <li>Primero</li>
+        <li>Segundo
+            <ul>
+                <li>Segundo uno</li>
+                <li>Segundo dos</li>
+            </ul>
+        </li>
+        <li>trecero</li>
+    </ul>
+    <h2>Uso de la etiqueta <mark>OL</mark></h2>
+    <p>perite definir listas o viñetas ordenadas <i>(Ordered list)</i> ya sea con numeracion o alfaveticamente</p>
+    <p>Esta etiqueta cuenta con tres atributos:</p>
+    <h3>Type: especifica el tipo de orden que se a de aplicar a la lista y este atributo puede resivir los siguientes valores</h3>
+    <p><b>1</b> es el valor por defecto de las listas ordenadas</p>
+    <p><b>a</b> establece que la numeracion de la lista se ara alfabéticamente</p>
+    <p><b>A</b> establece que la numeracion de la lista se ara alfabéticamente en mayusculas</p>
+    <p><b>i</b> establece que la numeracion de la lista se ara con numeros romanos</p>
+    <p><b>I</b> establece que la numeracion de la lista se ara con numeros romanos</p>
+    <h3>Start: indica el valor de inicio, por el cual iniciara el orden de la lista.</h3>
+    <h3>Reversed: permite indicar que el orden que se aya elegido se represente inversamente</h3>
+    <p>Etes atributo de es de tipo booleano es de decir que solo cuenta con dos valores true o false, en caso de aparecer en la etiqueta es true</p>
+    <br>
+    <br>
+    <h2>Ejemplo de una lista ordenada</h2>
+    <!--Aca se aplica el formato por defecto es como si se definiria con el atributo TYPE="1"-->
+    <ol>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+    </ol>
+    <!--Aca se aplica el formato alfabético TYPE="A"-->
+    <ol type="A">
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+    </ol>
+    <!--Aca se aplica todos los atributos-->
+    <ol start="10" type="1" reversed>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+    </ol>
+</body>
+
+</html>

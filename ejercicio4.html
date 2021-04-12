@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="description" content="ejemplos con la etiqueta table">
+    <meta name="keywords" content="table, th,thead, tbody, td, tr, caption">
+    <meta name="generator" content="Ejemplos en HTML5">
+    <title>Ejemplos con tablas</title>
+</head>
+
+<body>
+    <h1 dir="rtl">Ejemplos practicos de tablas</h1>
+    <br>
+    <hr>
+    <h2>Ejemplo uno</h2>
+    <table border="1">
+        <caption>Tabla simple</caption>
+        <thead>
+            <th>Col.a</th>
+            <th>Col.b</th>
+            <th>Col.c</th>
+            <th>Col.d</th>
+        </thead>
+        <tr>
+            <th>Fila 1</th>
+            <td>Cel b1</td>
+            <td>Cel c1</td>
+            <td>Cel d1</td>
+        </tr>
+        <tr>
+            <th>Fila 2</th>
+            <td>Cel b2</td>
+            <td>Cel c2</td>
+            <td>Cel d2</td>
+        </tr>
+        <tr>
+            <th>Fila 3</th>
+            <td>Cel b3</td>
+            <td>Cel c3</td>
+            <td>Cel d3</td>
+        </tr>
+    </table>
+    <br>
+    <h2>Ejemplos dos</h2>
+    <p><strong>Nota: </strong> para unir filas se usa el atributo rowspan y para unir columnas colspan</p>
+    <br>
+    <table border="1">
+        <caption>Combinacion de filas y columnas</caption>
+        <thead>
+            <tr>
+                <!--Como podemos observar se puede usar los dos atributos en una sola pestaña-->
+                <th rowspan="2" colspan="2"></th>
+                <th rowspan="2">Columna 1</th>
+                <th colspan="2">Columna 2</th>
+            </tr>
+            <tr>
+                <th>Columna a</th>
+                <th>Columna b</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">Fila 1</th>
+                <th>Fila a</th>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+            <tr>
+                <th>Fila b</th>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+            <tr>
+                <th colspan="2">Fila 2</th>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2>Ejemplo tres</h2>
+    <table border="1">
+        <caption>Tabla avanzada</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Mes</th>
+                <th colspan="4">Conceptos</th>
+                <th rowspan="2">Total</th>
+            </tr>
+            <tr>
+                <th>Corriente</th>
+                <th>Facturas</th>
+                <th>Coche</th>
+                <th>Casa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Enero</th>
+                <td>-</td>
+                <td>---</td>
+                <td>----</td>
+                <td>----</td>
+                <td align="center">----</td>
+                <!--el atributo align con el valor center como su nombre lo indica nos permite central el contenido en este caso de la celda-->
+            </tr>
+            <tr>
+                <th>Febrero</th>
+                <td>-</td>
+                <td>---</td>
+                <td>----</td>
+                <td>----</td>
+                <td align="center">----</td>
+            </tr>
+            <tr>
+                <th>Marzo</th>
+                <td>4</td>
+                <td>4</td>
+                <td>5</td>
+                <td>3</td>
+                <td align="center">-</td>
+            </tr>
+            <tr>
+                <th>Abril</th>
+                <td>5</td>
+                <td>7</td>
+                <td>6</td>
+                <td>2</td>
+                <td align="center">-</td>
+            </tr>
+            <tr>
+                <th>Mayo</th>
+                <td>5</td>
+                <td>7</td>
+                <td>6</td>
+                <td>2</td>
+                <td align="center">-</td>
+            </tr>
+            <tr>
+                <th>Junio</th>
+                <td>5</td>
+                <td>7</td>
+                <td>6</td>
+                <td>2</td>
+                <td align="center">-</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th rowspan="2">Totales</th>
+                <td align="center">---</td>
+                <td align="center">---</td>
+                <td align="center">---</td>
+                <td align="center">---</td>
+                <td align="center">---</td>
+            </tr>
+            <tr>
+                <th>Corriente</th>
+                <th>Facturas</th>
+                <th>Coche</th>
+                <th>Casa</th>
+                <th>TOTAL</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
