@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="description" content="Ejemplo con la etiqueta audio">
+    <meta name="keywords" content="audio, source, src, preload, controls, loop, muted, autoplay, type">
+    <meta name="generator" content="Ejemplo con HTML5">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Uso de la etiqueta AUDIO y sus atributos</h1>
+    </header>
+    <hr>
+    <section>
+        <h2>La etiqueta de audio como su nombre lo indica nos permite integrar contenido de audio</h2>
+        <article>
+            <p><b>Atributo src: </b>nos permite definit la ruta absoluta o relativa de donde esta alojado el archivo de audio</p>
+            <p><b>Atributo Autoplay: </b>permite que al cargar la pagina se reprodusca de manera automatica el audio</p>
+            <p><b>Atributo Controls: </b>muetar los controladores basico de un reproductor como lo es pausar, play, control de volumen, etc.</p>
+            <p><b>Atributo Loop: </b>este atributo es de tipo booleano y permite crear un bucle en cual se retipa una y otra ves el audio</p>
+            <p><b>Atributo Muted: </b>permite que el reproductor se inicie en silencio es de tipo booleano</p>
+            <p><b>Atributo Preload: </b>este atributo permite precargar el contenidoo del audio para que no se genere cuelques o pausas a la hora de reproducir el audio.</p>
+            <p>cuenta con tres posibles valores: none no se realiza nongun tipo de precarga. Auto: se realiza pa precarga completa del audio, este valor se a de usar si no se compromete la velocidad entre la respuesta de cliente servidor</p>
+            <p>por ultomo si definimos el valor metadata: solo se precargara informacion correspondiente al archivo de audio como lo puede ser duracion, dimencion, etc</p>
+            <p><b>Etiqueta Source: </b>permite realizar la carga del archivo de audio en varios formatos cuenta con dos atributos src y type</p>
+            <p><b>Atributo type: </b>este atributo se utiliza para especificar el tipo MIME del archivo de audio</p>
+            <table border="1">
+                <caption>Algunos Valores MIME para Audio y Video</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="3">Valor MIME</th>
+                        <th rowspan="3">Audio/Video</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>Video/ogg</th>
+                    <td>Video</td>
+                </tr>
+                <tr>
+                    <th>Video/mp4</th>
+                    <td>Video</td>
+                </tr>
+                <tr>
+                    <th>Video/webm</th>
+                    <td>Video</td>
+                </tr>
+                <tr>
+                    <th>Audio/ogg</th>
+                    <td>Audio (*.ogg)</td>
+                </tr>
+                <tr>
+                    <th>Audio/mpeg</th>
+                    <td>Audio (*.mp3)</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+    <section>
+        <header>
+            <h2>Formatos que reproducen los navegadores</h2>
+        </header>
+        <table border="1">
+            <caption>Algunos Navegadores y sus formatos</caption>
+            <thead>
+                <th rowspan="2">Navegador</th>
+                <th rowspan="2">Mp3</th>
+                <th rowspan="2">Wav</th>
+                <th rowspan="2">Ogg</th>
+            </thead>
+            <tr>
+                <th>Internet Explorer</th>
+                <td>SI</td>
+                <td>NO</td>
+                <td>NO</td>
+            </tr>
+            <tr>
+                <th>Google Chrome</th>
+                <td>SI</td>
+                <td>SI</td>
+                <td>SI</td>
+            </tr>
+            <tr>
+                <th>Firefox</th>
+                <td>SI</td>
+                <td>SI</td>
+                <td>SI</td>
+            </tr>
+            <tr>
+                <th>Safari</th>
+                <td>SI</td>
+                <td>SI</td>
+                <td>NO</td>
+            </tr>
+            <tr>
+                <th>Opera</th>
+                <td>No</td>
+                <td>SI</td>
+                <td>SI</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <header>
+            <h1>Eejemplo con la etiqueta Audio</h1>
+        </header>
+        <article>
+            <audio controls>
+                <source src="/music/La oreja de Van La Gogh -- playa.mp3" type="audio/mpeg">
+                <source src="/music/La oreja de Van La Gogh -- playa.wav" type="audio/wav">
+                Formato de audi no soportado por le navegador
+            </audio>
+        </article>
+    </section>
+</body>
+
+</html>
