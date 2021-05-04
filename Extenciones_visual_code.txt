@@ -1,0 +1,5 @@
+Extenciones usadas en Visual estudio code para html5:
+
+Auto Rename Tag (permite renombrar etiquetas de html).
+Live Server (permite emular un servidor para desarrollador).
+Elm Emmet 

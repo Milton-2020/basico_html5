@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="description" content="Ejemplo etiqueta video">
+    <meta name="keywords" content="video,src, source, preload, muted, loop, controls, autoplay, height, width">
+    <meta name="generator" content="Ejemplos con HTML5">
+    <title>Etiqueta video</title>
+</head>
+
+<body>
+    <header>
+        <h1 dir="rtl">Uso de la etiqueta Video</h1>
+    </header>
+    <main>
+        <p>la etiqueta video permite integrar y poder reproducir un video en el documento web</p>
+        <table border="1">
+            <caption>Lista de navegadores y formatos soportados</caption>
+            <thead>
+                <th>Navegador</th>
+                <th>MP4</th>
+                <th>WebM</th>
+                <th>Ogg</th>
+            </thead>
+            <tr>
+                <th>Internet Explorer</th>
+                <td>SI</td>
+                <td>NO</td>
+                <td>NO</td>
+            </tr>
+            <tr>
+                <th>Google Chrome</th>
+                <td>SI</td>
+                <td>SI</td>
+                <td>SI</td>
+            </tr>
+            <tr>
+                <th>Firefox</th>
+                <td>SI</td>
+                <td>SI</td>
+                <td>SI</td>
+            </tr>
+            <tr>
+                <th>Safari</th>
+                <td>SI</td>
+                <td>NO</td>
+                <td>NO</td>
+            </tr>
+            <tr>
+                <th>Opera</th>
+                <td>NO</td>
+                <td>SI</td>
+                <td>SI</td>
+            </tr>
+        </table>
+        <section>
+
+            <article>
+                <header>
+                    <h2>Algunos atributos que componen la etiqueta video</h2>
+                </header>
+                <p><b>Atributo SRC: </b>este atributo permite definir la ruta en la cual se encuantra el archivo de video</p>
+                <p><b>Atributo AUTOPLAY: </b>especifica que el archivo de video se reprodusca automaticamente al cargar la pagina</p>
+                <p><b>Atributo COTROLS: </b>permite visualixar los controles de control de video como lo son play, volumebe, pantalla completa, etc</p>
+                <p><b>Atributo LOOP: </b>permite generar un bucle que se repite una y otra ves el archivo de video</p>
+                <p><b>Atributo MUTED: </b>con este atributo al momento de cargar el archivo de video se inicializa en modo silencio</p>
+                <p><b>Atributo PRELOAD: </b>este atributo curnta con tres posobles valores, none, auto y metadata</p>
+                <p><i>none: </i>no hace ninguna precarga del archivo de video y espera asta que el usuario inice la reproduccion</p>
+                <p><i>auto: </i>si se define este valor se inicializa la precarga del archivo de video</p>
+                <p><i>metadata: </i>precarga solo datos del archivo de video,duracioin, dimenciones, etc</p>
+                <p><b>Atributo HEIGHT: </b>permite definir el alto del video expresado el valor en pixeles</p>
+                <p><b>Atributo WIDTH: </b>permite definir el ancho del video expresado en pixeles</p>
+            </article>
+            <article>
+                <p><b>Etiqueta SOURCE</b>permite la carga del achivo de video en varios formatos y cuenta con dos atributos src y type</p>
+                <p><i>Atributo src: </i>permite definir la ruta ya sea absoluta o relativa de donde esta alojado el archivo de video</p>
+                <p><i>Atributo type: </i>se usa para indicar el tipo MIME del archivo que se quiere reproducir</p>
+                <table border="1">
+                    <caption>Tipos MIME</caption>
+                    <thead>
+                        <th>Valor MIME</th>
+                        <th>Audio/Video</th>
+                    </thead>
+                    <tr>
+                        <th>Video/Ogg</th>
+                        <td>Video</td>
+                    </tr>
+                    <tr>
+                        <th>Video/mp4</th>
+                        <td>Video</td>
+                    </tr>
+                    <tr>
+                        <th>Video/webm</th>
+                        <td>Video</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <section>
+            <header>
+                <h1>Ejemplo de la etiqueta Video</h1>
+            </header>
+            <hr>
+            <video width="250" height="250" controls preload="auto">
+                <source src="/video/video1.mp4" type="video/mp4">
+                <source src="/video/video1.webm" type="video/webm">
+                video no soportado por el navegador
+            </video>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
