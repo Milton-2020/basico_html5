@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,13 +12,24 @@
 
 <body>
     <header>
-        <nav>
+        <nav dir="rtl">
+            <a href="/index.html">Home</a>
             <a href="/ejercicio7/ejercicio7.html">Inicio</a>
             <a href="/ejercicio7/sonido.html">Sonido</a>
             <a href="/ejercicio7/object.html">Object</a>
         </nav>
+        <hr>
         <h1>Ejemplo con la etiqueta Video</h1>
     </header>
+    <main>
+        <video controls loop preload="auto" width="300" height="300">
+            <source src="/video/video1.mp4" type="video/mp4">
+            <source src="/video/video1.webm" type="video/webm">
+        </video>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados &copy; 2021</p>
+    </footer>
 </body>
 
 </html>

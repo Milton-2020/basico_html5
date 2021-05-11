@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -14,17 +14,23 @@
 
 <body>
     <header>
-        <nav><a href="/ejercicio7/ejercicio7.html">Inicio</a></nav>
+        <nav dir="rtl">
+            <a href="/index.html">Home</a>
+            <a href="/ejercicio7/ejercicio7.html">Inicio</a>
+            <a href="/ejercicio7/video.html">Video</a>
+            <a href="/ejercicio7/object.html">Objeto</a>
+        </nav>
+        <hr>
         <h1>Ejemplo con la etiqueta Sonido</h1>
     </header>
     <main>
         <audio controls preload="auto" loop autoplay>
-            <source src="/music/La oreja de Van La Gogh -- playa.mp3" type="">
-            <source src="/music/La oreja de Van La Gogh -- playa.wav" type="">
+            <source src="/music/La oreja de Van La Gogh -- playa.mp3" type="audio/mpeg">
+            <source src="/music/La oreja de Van La Gogh -- playa.wav" type="audio/wav">
         </audio>
     </main>
     <footer>
-        <p>Todos los derechos reservados</p>
+        <p>Todos los derechos reservados &copy; 2021</p>
     </footer>
 </body>
 
