@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernandez">
+    <meta name="description" content="Ejemploc con la etiqueta track">
+    <meta name="keywords" content="src, track, default, label, kind, srclang, captions, chapters, descrioptions, metadata, subtitles">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 dir="rtl">Uso de la etiqueta TRACK y sus atributos</h1>
+    </header>
+    <main>
+        <p>Dicha etiqueta nos permite poder integrar subtítulos (pistas de texto) a los elementos de audio y video, para realizar la visualización esta etiqueta requiere inclusión de un archivo con la extensión .vtt</p>
+        <section>
+            <header>
+                <h2>Atributos de la etiqueta TRACK</h2>
+            </header>
+            <p><strong>Atributo SRC: </strong> este atributo permite especificar la direccion URL del recurso al cual se quiere acceder, en este caso a un archivo .vtt</p>
+            <p><strong>Atributo DEFAULT: </strong>permite definir cual es el archivo por defecto en caso aque existieran varios archivos de subtítulos, es de tipo booleano sigfnifica que con solo especificarlo es aplicado</p>
+            <p><strong>Atributo LABEL: </strong>permite especificar entre comillas el titulo para la pista de texto.</p>
+            <section>
+                <h2>Atributo KIND y sus valores</h2>
+                <table border="1">
+                    <caption>Valores del atributo kind</caption>
+                    <thead>
+                        <th>Valor</th>
+                        <th>Descriptión</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>captions</th>
+                            <td>Defiene la traducción de díalogo y efectos de sonido. (Aptos para personas con discapadidad uditiva)</td>
+                        </tr>
+                        <tr>
+                            <th>chapters</th>
+                            <td>Define títulos de capítulos. Recomendable para navegación por recursos multimedia.</td>
+                        </tr>
+                        <tr>
+                            <th>descriptions</th>
+                            <td>Define una descripción textual del video que ese esté reproduciendo.</td>
+                        </tr>
+                        <tr>
+                            <th>subtitles</th>
+                            <td>Define subtítulos. Utilizado para visualizar los subtítulos en un video.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <p><strong>Atributo SRCLANG: </strong>este atributo define en su valor el idioma en el cual se encuentra el subtítulo, utilizando los codigos del lenguaje.<br>
+            El atributo es obligatorio si se implementa el atributo kind y el valor subtitles</p>
+        </section>
+        <section>
+            <h2>Como crear un archivo de subtítulos con extencion .vtt</h2>
+            <p>Al ser un archivo de texto plano es muy facil de crear, en la primera linea del documento deve de inicar WEBVTT, luego un salto de linea y se define un CUES</p>
+            <p>Un CUES es como un bloque dentro del archivo, que esta compuesto por un id, un rango de tiempo inicio y fin y el texto que sera el titulo del video.</p>
+            <p>El formato de tiempo es el siguiente: </p>
+            <p>HH:MM:SS:MMM --> HH:MM:SS:MMM</p>
+        </section>
+        <br>
+        <section>
+            <article>
+                <header><h2>Ejemplo con la etiqueta TRACK</h2></header>
+                <video src="/video/video1.mp4" controls width="350" height="350">
+                    <source src="/video/video1.webm">
+                    <track src="/video/subtituos/sub.vtt" kind="subtitles" srclang="es" label="Spanish" />
+                    Video no soportado por el navegador
+                </video>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+WEBVTT
+
+1
+00:00:01:000 --> 00:00:3:000
+Primer cue con id 1 y una duracion de 10s
+
+2
+00:00:4:000 --> 00:00:5:000
+segundo cue con id 2 y una duracion de 10s
