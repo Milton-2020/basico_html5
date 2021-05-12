@@ -22,7 +22,104 @@
                 <header>
                     <h2>Etiqueta FORM</h2>
                 </header>
-                <p></p>
+                <p>Diha etiquera permite definir un formulario de datos, utilizado para traspasar datos al servidor.</p>
+                <p>Un formulario puede contener a su vez, elementos de entrada como lo son campos de texto, casillas de verificación, botones radio, botones de envió, lista de selección, areas de texto, etc. </p>
+            </article>
+            <article>
+                <header>
+                    <h3>Atributos de la etiqueta Form</h3>
+                </header>
+                <p><strong>Atributo accept-charset: </strong>este atributo permite establecer el conjunto de caracteres que a de utilizar el formulario para envio de informacion al servidor.</p>
+                <p>Sino se establece el atributo se toma por defecto el valor "UNKNOWN" ("Desconocido"), el cual aplica el conjunto de caracteres que tenaga aplicado el documento web. (los atributos que mas se utilizan son UTF-8 y ISO-8859-1 que corresponde al alfabeto latín)</p>
+                <p><strong>Atributo action: </strong>el atributo permite especificar donde han de ser enviados los datos del formulario, cuando este es enviado. Se a de especificar la tuta relativa o absoluta al recurso encargado de procesar la información.</p>
+                <p><strong>Atributo autocomplete: </strong>el atributo especifica que el formulario puede utilizar las entradas de datos anteriores que puede haber realizado el usuario, para autocompletar los campos que son solicitados por el formulario. Los valores que puede tener son on u off, en on esta activo el auto completado en off esta desavlitado</p>
+                <p><strong>Atributo enctype: </strong>el atributo permite especificar como han de ser codificado los datos de un formulario, cuando este es enviado. Solo se puede usar cuando el atributo <b>method</b>, tiene asignado un valor <b>"POST"</b></p>
+                <table border="2">
+                    <caption>Posibles valores que puede tener enctype</caption>
+                    <thead>
+                        <th>Valor</th>
+                        <th>Descriptión</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>application/x-www-form-unrlencoded</th>
+                            <td>
+                                este valor predeterminado por defecto. <br>Todo los caractere son codificasos, <br>los espacios en blanco son <br>convertidos en símbolos "+", <br>y los caracteres especiales, conertidos <br>a su ves hexadecimales en ASCII
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>multipart/form-data</th>
+                            <td>
+                                Los datos no son codificados, se ha <br>de utilizar cuando se envía archivos <br>asociados al formulario, con el control <br>de carga de archivos.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>text/plain</th>
+                            <td>
+                                Los datos son codificados, convirtiendo <br>los espacios en blanco en símbolo "+", <br> mientras que los caracteres especiales <br>no son convertidos.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>Atributo method: </strong>el atributo permite especificar la forma o método de envió de los datos contenidos en el formulario.</p>
+                <p>Los valores para el atributo son <strong>GET</strong>, o <strong>POST.</strong></p>
+                <p>El primer valor GET envia los datos utilizando la URL, por lo tanto los datos son enviados mediante nombre/valor, no se recomienda usar este valor cuando los datos son sencibles a la seguridad, ya que los valores son mostrados en la barra de direcciones del navegador.La cantidas de <strong>informacion maxima que se puede enviar es de 3000 caracteres.</strong></p>
+                <p>El segundo valor del atrbuto es <strong>POST</strong> por el contrario no tiene limite de tamaño y los datos se envian dentro de la peticion HTTP, dek atributo <strong>action</strong> por lo tanto los datos no son visible en si envio y la seguridad de los mismos de mantiene intacta.</p>
+                <p><strong>Atributo name: </strong>el atributo pemite especificar el nombre que se quiere asignar al formulario o los datos que se solicitane en el mismo. El nombre puede ser utilizado posteriormente bien por lenguajes cliente, para interactuar con el formulario, bien con lenguajes de servidor para procesar los datos recibidos.</p>
+                <p><strong>Atributo novalidate: </strong>el atributo permite especificar que los datos del formulario no sean validados, agún lasd características de los campos utilizadas en el formulario de esta forma el formulario envía los datos sin realizar ningún tipo de comprobación sobre los datos.</p>
+                <p>Este atributo booleano, por lo tanto su aparición en la etiqueta de formulario, hace que se active el mismo.</p>
+                <p><strong>Atributo target: </strong>el atributo permite especificar el destino por defecto para todos los enlaces y formularios del documento web.</p>
+                <table border="2">
+                    <caption>Valores del atributo target.<caption>
+                        <thead>
+                            <th>target</th>
+                            <th>Descriptión</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>_blank</th>
+                                <td>
+                                    Especifica que el destino sea una nueva ventana <br> del navegador, o una nueva pestaña.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>_self</th>
+                                <td>
+                                    Por defecto. Abre el destino en el mismo lugar <br> donde se haya realizado el clic.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>_parent</th>
+                                <td>
+                                    Abre el destino en un marco asociado.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>_top</th>
+                                <td>Abre el destino ocupando todo el cuerpo de la <br> ventana.</td>
+                            </tr>
+                            <tr>
+                                <th>framename</th>
+                                <td>
+                                    Abre el destino en el marco del cual se <br> especifica el nombre.
+                                </td>
+                            </tr>
+                        </tbody>
+                </table>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header><h2>
+                    Ejemplo con la etiqueta FORM y sus atributos
+                </h2></header>
+                <form action="enviar_datos.php" method="POST" target="_blank" name="formulario" enctype="application/x-www-form-urlencoded" autocomplete="on" accept-charset="UTF-8">
+                    <label>Nombre: </label>
+                    <input type="text" name="nombre"><br>
+                    <label>Dirección: </label>
+                    <input type="text" name="direccion"><br>
+                    <input type="submit" value="Enviar" name="envir">
+                </form>
             </article>
         </section>
     </main>
