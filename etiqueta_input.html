@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="keywords" content="input, type, src, formenctype, accept, alt, autocomplete, autofocus, checked, disabled, form,  formaction, formmethod, formnovalidate, formtarget, height, list, max, min, multiple, name, pattern, placeholder, readonly, required, size, step, value, width">
+    <meta name="generator" content="Ejemplo con HTML5">
+    <meta name="description" content="ejemplos con la etiqueta input y sus atributos">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Uso de la etiqueta INPUT y sus atributos</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <header>
+                    <h2>Etiqueta INPUT</h2>
+                </header>
+                <p>Es una de las etiquetas mas importantes para la solicitud de datos mediante un formulario, y que permite espedificar los tipos de datos que se quiere solicutar para enviar.</p>
+                <p>Tambien establece las reglas de validacion de los datos.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Atributo accept</h2>
+                </header>
+                <p>este atributo se usa especificamente para los datos de <strong>tipo file</strong>, y permite especificar los tipos de archivos que acepta el servidor que resibe los datos.</p>
+                <table border="2">
+                    <caption>Posibles valores del atributo accept</caption>
+                    <thead>
+                        <tr>
+                            <th>Valor del Atributo</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Audio/*</th>
+                            <td>Todos los archivos de audio son aceptados.</td>
+                        </tr>
+                        <tr>
+                            <th>Video/*</th>
+                            <td>Todos los archivos de video son aceptados.</td>
+                        </tr>
+                        <tr>
+                            <th>image/*</th>
+                            <td>Todos los archivos de imagenes son aceptados.</td>
+                        </tr>
+                        <tr>
+                            <th>MIME tipe</th>
+                            <td>Sea de especificar un valor de tipo MIME, sin parametros.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2>Ejemplo con el atributo accept</h2>
+                </header>
+                <form>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="">
+                    <input type="file" accept="image/*">
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Todos los derechos reservados &copy; 2021
+    </footer>
+</body>
+
+</html>
