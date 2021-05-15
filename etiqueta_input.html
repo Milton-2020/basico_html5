@@ -71,12 +71,16 @@
                 </form>
             </article>
             <article>
-                <header><h2>Atributo alt</h2></header>
+                <header>
+                    <h2>Atributo alt</h2>
+                </header>
                 <p>Permite espesificar un texto alternativo para la imagen. Este texto alternativo es visualizado cuando se produce un error en el atributo src, la conexión fuese muy lenta o si el usuario utiliza un lector de pantalla.</p>
                 <p>Se puede esepecificar siempre y cuando el tipo de dato que se solicito, sea de tipo image, según se haya especificado en el atributo type.</p>
             </article>
             <article>
-                <header><h2>Ejemplo con el atributo ALT</h2></header>
+                <header>
+                    <h2>Ejemplo con el atributo ALT</h2>
+                </header>
                 <form action="grabar_dato.php" method="POST">
                     <label for="nombre">Nombre: </label>
                     <input type="text" name="nombre"><br>
@@ -88,28 +92,39 @@
         </section>
         <section>
             <article>
-                <header><h2>Atributo autocomplete</h2></header>
+                <header>
+                    <h2>Atributo autocomplete</h2>
+                </header>
                 <p>Especifica que el dato solcitado puede utilizar las entradas de datos anteriores que pueda haber realizado el usuario, para autocompletar el campo que se esta solicitando.</p>
                 <p>Se pueden establecer como valor posible on, que indica la activación. Y off, indicando que el auto completado estaria desactivado</p>
             </article>
             <article>
-                <header><h2>Atributo autofocus</h2></header>
+                <header>
+                    <h2>Atributo autofocus</h2>
+                </header>
                 <p>Permite especificar cuál es el control que resibe el "foco", cuando se realiza la carga del documento web en el navegador. Es un atributo booleano y solo con aparecer significa que esta activo.</p>
                 <p>Se a de tener en cuenta que este atributo solo se puede especificar en un solo dato del formulario.</p>
             </article>
             <article>
-                <header><h2>Atributo checked</h2></header>
-                <p>El atributo se puede utilizar en el caso de que en el atributo <i>type</i>, se haya especificado un tipo de dato <i>checkbox</i>, o <i>radio.</i> u permite especificar que el campo sobre el cual se aplica parezca inicial mente marcado, cuando se realiza la carga del docuemto.</p>
+                <header>
+                    <h2>Atributo checked</h2>
+                </header>
+                <p>El atributo se puede utilizar en el caso de que en el atributo <i>type</i>, se haya especificado un tipo de dato <i>checkbox</i>, o <i>radio.</i> u permite especificar que el campo sobre el cual se aplica parezca inicial mente marcado,
+                    cuando se realiza la carga del docuemto.</p>
             </article>
             <article>
-                <header><h2>Atributo disabled</h2></header>
+                <header>
+                    <h2>Atributo disabled</h2>
+                </header>
                 <p>El atributo especificado que el elemento sobre el que se aplica, se ha de desactivar. Un elemento desativado está bloqueado y no se puede cambiar ni realizar clic sobre el mismo.</p>
                 <p>Este atributo es de tipo booleano es de sir con tansolo que se especifique en la etiqueta ya estaria activi</p>
             </article>
         </section>
         <section>
             <article>
-                <header><h2>Ejemplo</h2></header>
+                <header>
+                    <h2>Ejemplo</h2>
+                </header>
                 <form action="enviar.php" autocomplete="on">
                     <label for="nombre">Nombre: </label>
                     <input type="text" autofocus><br>
@@ -122,6 +137,220 @@
                     <label for="comentar">Comentarios</label>
                     <input type="text" name="comentar" disabled>
                 </form>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2>Atrbuto form</h2>
+                </header>
+                <p>El atributo permite espacificar a que formulario pertenece el campo que se esta especificando el atributo estpecificador del formulario. De esta forma se puede especificar un campo incluso fuera del formulario, pero indicando que pertenece
+                    un formulario en concreto, de manera que al enviar los datos se envien tambien el contenido de campo esterno al formulario,pero relacionado.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Ejemplo con los atributos form</h2>
+                </header>
+                <form action="enviar.php" id="formulario" method="GET">
+                    <label form="formulario">Nombre: </label>
+                    <input type="text" form="formulario" autofocus><br>
+                    <label form="formulario">Apellido: </label>
+                    <input type="text" form="formulario"><br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <br>
+                <label form="formulario">Direccion: </label>
+                <input type="text" form="formulario">
+                <br>
+            </article>
+            <article>
+                <header>
+                    <h2>Atributo formaction</h2>
+                </header>
+                <p>Permite especificar una URL distinta de envio, sobre escribienso la que aparece en el atributo acction, del formulario. De esta forma es posible situar distintos botones de envio de formulario, enviando los datos a diferentes sitios segun
+                    se pulse un boton u otro.</p>
+                <p>El atrubuto se a de usar cuado el atributo type tenga un valor submit o image</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Ejemplo con el atributo formaction</h2>
+                </header>
+                <form action="enviar.php" id="formulario1">
+                    <label form="formulario1">Nombre: </label>
+                    <input type="text" id="formulario1" autocomplete="on"><br>
+                    <label form="formulario1">Apellido: </label>
+                    <input type="text" id="formulario1"><br>
+                    <input type="submit" value="Enviar">
+                    <input type="submit" value="EviarAdministracion" formaction="enviarAdministracion.php">
+                </form>
+            </article>
+        </section>
+        <section>
+            <header>
+                <h2>Atribito fromenctypr</h2>
+            </header>
+            <p>Permite identifica como a de ser codificado los datos del formulario, cuando este es enviado. Este atributo se aplica solo en botones de formulario de tipo submit o image. Solo se deve de usa cuando el atributo method tiene le valor "POST",
+                el atributo sobre escirbel el metodo de envio del formulario, permitiendo enviar segun el boton el cual se presione.</p>
+            <table border="2">
+                <caption>Posibles valores del atributo</caption>
+                <thead>
+                    <tr>
+                        <th>Valor</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>aplication/X-WWW-form-urlencode</th>
+                        <td>este valor predeteminado por defecto. <br> todos los caracteres son codificados, <br> los espacios en blanco son convertidos <br>en signo +, y los caracteres especiales a <br>sus valores hexadecimales en ASCII.</td>
+                    </tr>
+                    <tr>
+                        <th>multipart/form-data</th>
+                        <td>Los datos son coddificados, se ha de <br>utilizar cuando se envia archivos <br>asociados al formulario, con el control <br>de carga del archivos.</td>
+                    </tr>
+                    <tr>
+                        <th>text/plain</th>
+                        <td>Los datos son codificados, convirtiendo <br>lo espacios en blamco en signos +, <br>mietras que los caracteres especiales no <br>on convertidos.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <article>
+                <header>
+                    <h2>Atributo formmethod</h2>
+                </header>
+                <p>Permite especificar la forma o metodo del envido datos contenidos en el formulario.</p>
+                <p>Los valores para el atributo son GET o POST. Sobre escribiendo el metodo definido en el formulario, segun el boton sobre cual se pulse, se acepta el atributo en boton de envio de type submt o image.</p>
+                <p>Las reglas de envió dependiendo del valor del atributo get o post, son las mismas comentadas en el atriburo method de la etiqueta form.</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2>
+                        Ejemplo con el atributo fromenctype y formmethod
+                    </h2>
+                </header>
+                <form action="enviar.php" id="formulario2" method="POST">
+                    <label form="formulario2">Usuario: </label>
+                    <input type="text" form="formulario2"><br>
+                    <label form="formulario2">contraseña: </label>
+                    <input type="password" form="formulario2"><br>
+                    <input type="submit" value="Eviar" formenctype="application/x-www-form-urlencoded">
+                    <input type="submit" value="EviarAdmi" formenctype="text/plain" formmethod="GET">
+                </form>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2>Atributo formnovalidate</h2>
+                </header>
+                <p>Permite especificar que los datos del formulario no sean validados, segun las carateristicas de los campos utilizadosen el formulario, de esta forma el formulario envía los datos sin realizar nungún tipo de comprobacion de los datos.</p>
+                <p>Este atributo se usa sobre los campos de tipo submit o image, y se super pone al atributo apliicado al formulario, permitiendo asi el envio de datos no validados.</p>
+            </article>
+            <form action="enviar.php" id="formulario3" method="POST">
+                <label form="formulario3">Nombre: </label>
+                <input type="text" form="formulario3" autocomplete="on"><br>
+                <label form="formulario3">Apellido: </label>
+                <input type="text" form="formulario3"><br>
+                <label form="formulario3">Dirección: </label>
+                <input type="text" form="formulario3"><br>
+                <input type="submit" value="Enviar" formenctype="application/x-www-form-urlencoded">
+                <input type="submit" value="EnviarAdmin" formaction="envarAdmin.php" formmethod="GET">
+                <input type="submit" value="enviarnovalidar" formaction="novalidar.php" formnovalidate>
+            </form>
+            <article>
+                <header>
+                    <h2>Atributo formtarget</h2>
+                </header>
+                <p>El atributo permite definir el destino por defecto para todos los enlaces y formularios del documento web. El atributo se a de aplicar en campos de tipo submit o image, y sobre escribe el destino aplicado al formulario.</p>
+                <table border="2">
+                    <caption>Posibles valores del atributo</caption>
+                    <thead>
+                        <tr>
+                            <th>target</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th>_blank</th>
+                        <td>Espesifica que el destino sea una nueva ventana <br>del navegador, o una nueva pestaña. </td>
+                    </tr>
+                    <tr>
+                        <th>_self</th>
+                        <td>Por defecto habre el destino donde se a realizado el el clic</td>
+                    </tr>
+                    <tr>
+                        <th>_parent</th>
+                        <td>Abre el destino en un marco asociado.</td>
+                    </tr>
+                    <tr>
+                        <th>_top</th>
+                        <td>Habre el destino ocupado todo el cuerpo de la ventana.</td>
+                    </tr>
+                    <tr>
+                        <th>framename</th>
+                        <td>Abre el destino en el marco del cual se especifica el nombre.</td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <header>
+                    <h2>
+                        Ejemplo con el atributo target.
+                    </h2>
+                </header>
+                <form action="enviar.php" id="formulario4" method="POST">
+                    <label form="formulario4">Nombre: </label>
+                    <input type="text" form="formulario4"><br>
+                    <label form="formulario4">Apellido: </label>
+                    <input type="text" form="formulario4"><br>
+                    <input type="submit" value="Enviar nueva pestaña" formtarget="_blank">
+                    <input type="submit" value="enviar" formtarget="_self">
+                </form>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2>Atributo height.</h2>
+                </header>
+                <p>Permite definir el alto de una imagen en pixeles. el atributo solo se aplica a campos de tipo image, y se suele usar para los botones de envió de formulario</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Atributo width.</h2>
+                </header>
+                <p>Permite especificar el ancho de la imagene ne pixeles. El atributo se aplica solo en campos de tipo image, y se suele usar para los botones de envió de formulario</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Atributo name.</h2>
+                </header>
+                <p>Permite asignar el nombre que se el quiere definir al campo del formulario. El noombre puede ser usado bien por un lenguaje de cliente, para interactuar con el formulari, bien por lenguaje de servidor para procesar los datos recibidos.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Ejemplos con los atributos width, heigtht y name</h2>
+                </header>
+            </article>
+            <form action="enviar.php" method="POST" id="formulario5">
+                <label form="formulario5">Usuario: </label>
+                <input type="text" name="Usuario" form="formulario5"><br>
+                <label form="formulario5">Contraseña: </label>
+                <input type="password" name="contraseña" form="formulario5"><br>
+                <input type="image" src="/imagenes/inicio.png" alt="inicio de cecion" width="50" height="50" formtarget="_blank">
+                <input type="image" src="/imagenes/agregar.png" alt="registrase" width="50" height="50" formaction="registarse.php">
+            </form>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2>Atributo readonly.</h2>
+                </header>
+                <p>Permite especificar que un campo sea de solo lectura, es decir que su contenido podra ser seleccionable y visible pero no midificable. Se suele con conjuntos de lengujes de programacion de cliente, para alterar el valor de solo lectura,
+                    cuando se cumpla cierta condicion en los datos.</p>
+                <p>Este atributo es booleano es decir que con tan solo que aparesca en la etiqueta ya estaria activo.</p>
             </article>
         </section>
     </main>
