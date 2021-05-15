@@ -9,7 +9,7 @@
     <meta name="keywords" content="input, type, src, formenctype, accept, alt, autocomplete, autofocus, checked, disabled, form,  formaction, formmethod, formnovalidate, formtarget, height, list, max, min, multiple, name, pattern, placeholder, readonly, required, size, step, value, width">
     <meta name="generator" content="Ejemplo con HTML5">
     <meta name="description" content="ejemplos con la etiqueta input y sus atributos">
-    <title>Document</title>
+    <title>Etiqueta INPUT</title>
 </head>
 
 <body>
@@ -68,6 +68,59 @@
                     <label for="nombre">Nombre: </label>
                     <input type="text" name="nombre" id="">
                     <input type="file" accept="image/*">
+                </form>
+            </article>
+            <article>
+                <header><h2>Atributo alt</h2></header>
+                <p>Permite espesificar un texto alternativo para la imagen. Este texto alternativo es visualizado cuando se produce un error en el atributo src, la conexión fuese muy lenta o si el usuario utiliza un lector de pantalla.</p>
+                <p>Se puede esepecificar siempre y cuando el tipo de dato que se solicito, sea de tipo image, según se haya especificado en el atributo type.</p>
+            </article>
+            <article>
+                <header><h2>Ejemplo con el atributo ALT</h2></header>
+                <form action="grabar_dato.php" method="POST">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre"><br>
+                    <label for="direccion">Direccion: </label>
+                    <input type="text" name="direccion"><br>
+                    <input type="image" src="/imagenes/enviar.jpg" alt="Enviar informacion" width="80" height="80">
+                </form>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header><h2>Atributo autocomplete</h2></header>
+                <p>Especifica que el dato solcitado puede utilizar las entradas de datos anteriores que pueda haber realizado el usuario, para autocompletar el campo que se esta solicitando.</p>
+                <p>Se pueden establecer como valor posible on, que indica la activación. Y off, indicando que el auto completado estaria desactivado</p>
+            </article>
+            <article>
+                <header><h2>Atributo autofocus</h2></header>
+                <p>Permite especificar cuál es el control que resibe el "foco", cuando se realiza la carga del documento web en el navegador. Es un atributo booleano y solo con aparecer significa que esta activo.</p>
+                <p>Se a de tener en cuenta que este atributo solo se puede especificar en un solo dato del formulario.</p>
+            </article>
+            <article>
+                <header><h2>Atributo checked</h2></header>
+                <p>El atributo se puede utilizar en el caso de que en el atributo <i>type</i>, se haya especificado un tipo de dato <i>checkbox</i>, o <i>radio.</i> u permite especificar que el campo sobre el cual se aplica parezca inicial mente marcado, cuando se realiza la carga del docuemto.</p>
+            </article>
+            <article>
+                <header><h2>Atributo disabled</h2></header>
+                <p>El atributo especificado que el elemento sobre el que se aplica, se ha de desactivar. Un elemento desativado está bloqueado y no se puede cambiar ni realizar clic sobre el mismo.</p>
+                <p>Este atributo es de tipo booleano es de sir con tansolo que se especifique en la etiqueta ya estaria activi</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header><h2>Ejemplo</h2></header>
+                <form action="enviar.php" autocomplete="on">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" autofocus><br>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="apellido"><br>
+                    <label for="sexo">Define tu Sexo:</label><br>
+                    <input type="checkbox" name="sexo" value="Masculino"><label for="sexo">Masculino</label><br>
+                    <input type="checkbox" name="sexo" value="Femenino" checked><label for="sexo">Femenino</label><br>
+                    <input type="checkbox" name="sexo" value="otro"><label for="sexo">otro</label><br>
+                    <label for="comentar">Comentarios</label>
+                    <input type="text" name="comentar" disabled>
                 </form>
             </article>
         </section>
