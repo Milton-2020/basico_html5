@@ -352,6 +352,70 @@
                     cuando se cumpla cierta condicion en los datos.</p>
                 <p>Este atributo es booleano es decir que con tan solo que aparesca en la etiqueta ya estaria activo.</p>
             </article>
+            <article>
+                <header>
+                    <h2>Atributo required</h2>
+                </header>
+                <p>Permite especificar que la introducion de los datos en el campo an de ser obligatorios, es decir no se pueden dejar en blanco.</p>
+                <p>El atributo es booleano por consiguiente si se declara en el campo se activa</p>
+                <p>Dicho atributo se puede aplicar a campos de tipo texto, búsqueda, URL, fecha, email, contraseñas, casillas de verificacion, radios, numeros y ficheros.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Atributo placeholder</h2>
+                </header>
+                <p>Permite especificar un texto de ayuda sobre el contenido que a de tener el campo. El texto se muestra cuando el campo esta vacío y desparece cuando se escribe algo en el mismo.</p>
+                <p>El atributo se puede aplicar en campos de tipo texto, búsqueda, telefono y correo electronico.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Atributo value</h2>
+                </header>
+                <p>El atributo permite especificar el valor del campo de tipo input.</p>
+                <p>Si el atributo se aplica a elementos de tipo button, reset o submit, especifica el texto del boton.</p>
+                <p>Si se aplica a elementos de tipo texto, hidden o password, especifica el valor del campo por defecto.</p>
+                <p>Para campos de tipo radio, checkbox e image, especifica el valor asociado al campo y es obligatorio en los dos primeros. El atributo no se puede usar en campos de tipo file.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Atributo size</h2>
+                </header>
+                <p>Permire especificar el ancho vicible del campo en caracteres, de una etiqueta de tipo input, siempre que sea de tipo texto, search, URL, email o password.</p>
+                <p>Aunque especifique el archo vidible de la caja del campo, este atributo no establece el numero maximo de caracteres que pueda tener el mismo.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Atrbuto maxlength</h2>
+                </header>
+                <p>Define el numero maximo de caracteres que se permite teclear en una etiqueta input.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Atributo src</h2>
+                </header>
+                <p>Permite especificar el origen de la imagen, para un campo de tipo image, es decir su ubicación, bien mediate una ruta absoluta o relativa.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Ejemplo con los atributos required, placeholder, value, size, maxlength, src</h2>
+                </header>
+                <form action="enviar.php" method="POST" id="formulario8">
+                    <label form="nombre">Nombre: </label>
+                    <input type="text" required size="34" maxlength="200" placeholder="Ingrese su nombre" name="nombre"><br>
+                    <label form="apellido">Apellido: </label>
+                    <input type="text" required value="Apllido por defecto" size="40" name="apellido"><br>
+                    <label form="direccion">Direccion: </label>
+                    <input type="text" required placeholder="Ingrese la direcion aqui" maxlength="200"><br>
+                    <input type="image" src="/imagenes/5.jpg" alt="" value="" width="50" height="50">
+                </form>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2>Atributo min, max</h2>
+                </header>
+            </article>
         </section>
     </main>
     <footer>
