@@ -352,6 +352,25 @@
                     cuando se cumpla cierta condicion en los datos.</p>
                 <p>Este atributo es booleano es decir que con tan solo que aparesca en la etiqueta ya estaria activo.</p>
             </article>
+            <article>
+                <header><h2>Ejemplo con el atributo readonly</h2></header>
+                <script>
+                    function Activar(){
+                        document.getElementById("marca").readOnly=!document.getElementById("marca").readOnly;
+                    }
+                </script>
+                <form action="enviar.php" method="POST" id="formulerio7" target="_blank">
+                    <label form="nombre">Nombre: </label>
+                    <input type="text" name="nombre"><br>
+                    <label form="FechaNacimiento">Fecha Nacimiento: </label>
+                    <input type="date" name="fechaNacimiento"><br>
+                    <label form="vehículo">Vehículo: </label>
+                    <input type="checkbox" name="vehiculo" onclick="Activar()"><br>
+                    <label form="marca">Marca: </label>
+                    <input type="text" name="marca" readonly id="marca"><br>
+                    <input type="submit" name="enviar" value="enviar">
+                </form>
+            </article>
         </section>
     </main>
     <footer>
