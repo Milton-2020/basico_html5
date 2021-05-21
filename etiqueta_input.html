@@ -437,7 +437,48 @@
                 <p>se ha de tener en consideración que para los campos que reflejan fecha, esta se ha de expresar en formato americano, es decir año, mes y dia.</p>
             </article>
             <article>
-                <header><h2></h2></header>
+                <header><h2>Atributo multiple</h2></header>
+                <p>Permite especificar en campos de tipo file o email. Que se pueda introdicir en el campo uno o mas valores.</p>
+                <p>Es un atributo booleano, por lo tanto la simple aparición del mismo en la etiqueta del campo, activa la opción.</p>
+            </article>
+            <article>
+                <header><h2>Ejemplo con los atributos min, max, step y multiple</h2></header>
+                <form action="enviar.php" method="POST" accept-charset="UTF-8" autocomplete="on" name="formulario9">
+                    <label form="formulario9">Nombre: </label>
+                    <input type="text" placeholder="Ingrese su nombre" name="nombre" maxlength="60" size="80"><br>
+                    <label form="formulario9">Edad: </label>
+                    <input type="number" name="edad" min="18" max="78" step="1" value="18" id="edad"><br>
+                    <label form="formulario9">Fecha Nacimiento:</label>
+                    <input type="date" min="1940-01-01" max="2021-01-01"><br>
+                    <label form="formulario9">Puntuación: </label>
+                    <input type="number" min="0" max="10" step="2" value="0" name="puntuacion"><br>
+                    <input type="submit" name="enviar" value="Enviar datos">
+                    <!-- Uso del atributo multiple -->
+                    <label form="formulario9">Email: </label>
+                    <input type="email" placeholder="Ingres sus correos aca separado por coma" size="90" multiple>
+                </form>
+            </article>
+            <article>
+                <header><h2>Atributo list.</h2></header>
+                <p>Permite especificar una lista de datos, la cual será asociada al campo se forma que cuando se introduzca el valor sel mismo se pueda seleccionar uno de los datos especificados en la lista simplemente seleccionandola.</p>
+                <p>Para que funcione correctamente el atributo funciona en relacion con la etiqueta datalist, la cual permite especificar los datos de la lista en el interior de la etiqueta se ha de utilizar otra etiqueta denominada option.</p>
+                <p>La etiqueta option, tiene varios atrbutos asociados, como son: disabled, que especifica que el valor esta desactivado. El atributo label que permite especifica un texto corto para la opocion. El atributo selected, el cual predetermina el elemento seleccionado de la lista y el atributo value, el cual permite indicar el valor que será enviado al servidor.</p>
+            </article>
+            <article>
+                <header><h2>Ejemplo con el atributo list</h2></header>
+                <form action="enviar.php" method="GET" name="formulario10" autocomplete="on">
+                    <label form="formulario10">Nombre: </label>
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre aca" maxlength="60" size="80"><br>
+                    <label form="formulario10">Vehículo Marca: </label>
+                    <input type="text" name="marca" list="marcas"><br>
+                    <!--Uso de la etiqueta datalist y la etiqueta option-->
+                    <datalist id="marcas">
+                        <option label="sedán" value="Volvo">Volvo</option>
+                        <option label="sedán" value="BMW">BMW</option>
+                        <option label="sedán" value="Mercedes">Mercedes</option>
+                    </datalist> 
+                    <input type="submit" name="enviar" value="Enviar datos">
+                </form>
             </article>
         </section>
     </main>
