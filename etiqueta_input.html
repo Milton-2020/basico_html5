@@ -480,6 +480,132 @@
                     <input type="submit" name="enviar" value="Enviar datos">
                 </form>
             </article>
+            <article>
+                <header><h2>Atributo pattern</h2></header>
+                <p>Permite especifarcar un patron de entrada de datos en el campo sobre el que se aplica, de forma que si el valor introducido no cumple el  patrón especifica, el campo no será validado por el formulario.</p>
+                <p>El atributo trabaja con los campos de tipo texto, search, tel, email y password. Como recomendación se indica que se utiliza el atributo global title, para mostrar ayuda sobre el patrón de forma que el usuario sepa como introducir el mismo.</p>
+                <p>Un patrón es una cadena de texto, compuesta por símbolos o caracteres, los cuales significa algo según sea compuestos. Los patrones que se utilizan son los denominados "Patrones de Javascript".</p>
+                <a href="http://html5pattern.com/">Patrones segun su utilizacion.</a>
+            </article>
+            <article>
+                <header><h2>Ejemplo atributo pattern</h2></header>
+                <form action="enviar.php" method="GET" autocomplete="on" name="formulario11">
+                    <label form="formulario11">Nombre: </label>
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre" maxlength="60" size="80"><br>
+                    <label form="formulario11">Fecha</label>
+                    <input type="text" name="fecha1" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" title="DD.MM.AAAA"><br>
+                    <label form="formulario11">DNI</label>
+                    <input type="text" name="dni" pattern="[0-9]{8}-[a-zA-Z]{1}" title="xxxxxxxx-A"><br>
+                    <input type="submit" name="enviar" value="Enviar datos">
+                </form>
+            </article>
+            <article>
+                <header><h2>Atributo type</h2></header>
+                <p>Permite especificar ek tipo de campo que se quiere solicitar. El tipo por defecto que se aplica en caso de no aparecer el atributo es text, aunque se recomienda que el atributo siempre se especifique.</p>
+                <table border="2">
+                    <caption>Posibles valores del atributo</caption>
+                    <thead>
+                        <tr>
+                            <th>Valor del atributo</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>button</th>
+                            <td>Define un botón sobre el que se puede realizar clic. Es <br>frecuente mente usado para activar script.</td>
+                        </tr>
+                        <tr>
+                            <th>checkbox</th>
+                            <td>define una casilla de verificación.</td>
+                        </tr>
+                        <tr>
+                            <th>color</th>
+                            <td>define un capo de tipo selector de color.</td>
+                        </tr>
+                        <tr>
+                            <th>date</th>
+                            <td>Define un campo de tipo fecha en formato año, mes,dia. No <br>se ha de especificar hora.</td>
+                        </tr>
+                        <tr>
+                            <th>datetime</th>
+                            <td>Define un campo de tipo fecha y hora en formato año, mes, <br>dia, hora, minutos, segundos  y fracción de segundo, basado en <br>zona horaria.</td>
+                        </tr>
+                        <tr>
+                            <th>datetime-local</th>
+                            <td>Define un campo de tipo fecha y hora en formato año, mes, <br>dia, hora, minutos,segundos y fracción de segundos, sin base de <br>zona horaria.</td>
+                        </tr>
+                        <tr>
+                            <th>email</th>
+                            <td>Define un campo de tipo correo electrónico.</td>
+                        </tr>
+                        <tr>
+                            <th>file</th>
+                            <td>Define un campo de tipo selector de ficheros, el cual visualiza <br>un boton y presenta un cuadro de dialogo, donde se puede <br>seleccionar el/los ficheros a seleccionar.</td>
+                        </tr>
+                        <tr>
+                            <th>hidden</th>
+                            <td>Define un campo de tipo oculto, normalmente son utilizados <br>por los desarrolladores para el envió de informacion al <br>servidor.</td>
+                        </tr>
+                        <tr>
+                            <th>image</th>
+                            <td>Define un campo de tipo botón de envió representado <br>mediante una imagen especifica.</td>
+                        </tr>
+                        <tr>
+                            <th>month</th>
+                            <td>Define un campo de tipo control de mes y año, presentando <br>un selector de fecha.</td>
+                        </tr>
+                        <tr>
+                            <th>number</th>
+                            <td>Define un campo de tipo numérico entero.</td>
+                        </tr>
+                        <tr>
+                            <th>password</th>
+                            <td>Define un campo de tipo contreseña, este topo de campo <br>visualiza normalmente asteriscos en ves de mostrar el <br>contenido que se teclea.</td>
+                        </tr>
+                        <tr>
+                            <th>radio</th>
+                            <td>Define un botón de radio, para selección único, es decir <br>seleccionar una opción entre varios posibles.</td>
+                        </tr>
+                        <tr>
+                            <th>range</th>
+                            <td>Define un campo de tipo deslizador, en el cual arrastrando el <br>mismo se selecciona un rango de valor numérico.</td>
+                        </tr>
+                        <tr>
+                            <th>reset</th>
+                            <td>Define un campo de tipo botón de limpieza, el cual borra el <br>contenido de los campos del formulario.</td>
+                        </tr>
+                        <tr>
+                            <th>search</th>
+                            <td>Define un campo de tipo búsqueda, para teclear una cadena <br>de búsqueda, no realiza búsquedas en el sitio.</td>
+                        </tr>
+                        <tr>
+                            <th>submit</th>
+                            <td>Define un campo de tipo botón de envió, al pulsarlo se realiza <br>el envió del formulario.</td>
+                        </tr>
+                        <tr>
+                            <th>tel</th>
+                            <td>Define un campo de tipo introducción de telefono.</td>
+                        </tr>
+                        <tr>
+                            <th>text</th>
+                            <td>Define un campo de tipo texto, el ancho por defeceto del <br>campo es de 20 caracteres.</td>
+                        </tr>
+                        <tr>
+                            <th>time</th>
+                            <td>Define un campo para la introducción de horas.</td>
+                        </tr>
+                        <tr>
+                            <th>url</th>
+                            <td>Define un campo para la introducción de direcciones web <br>(url´s).</td>
+                        </tr>
+                        <tr>
+                            <th>week</th>
+                            <td>Define un campo para la introducción de semanas y mes.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
         </section>
     </main>
     <footer>
