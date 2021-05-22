@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="description" content="Ejemplo con un campo de tipo boton">
+    <meta name="generator" content="Ejemplo con html5">
+    <meta name="keywords" content="type, botton, input, name, form, id, action, method, placeholder">
+    <title>Tipo Boton</title>
+</head>
+<body>
+    <script>
+        function mensaje(){
+            alert("Hola mundo, Aqui Estoy...");
+        }
+    </script>
+    <header><h1>Campo de tipo boton.</h1></header>
+    <main>
+        <form action="enviar.php" id="formulario" method="GET" autocomplete="on">
+            <label form="formulari">Nombre: </label>
+            <input type="text" name="nombre" placeholder="ingrese su nombre" maxlength="60" size="80"><br>
+            <input type="button" value="Haz Clic" onclick="mensaje()">
+        </form>
+        <br><br>
+        <p><a href="/etiqueta_input.html">Regresar</a></p>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados &copy; 2021</p>
+    </footer>
+</body>
+</html>
