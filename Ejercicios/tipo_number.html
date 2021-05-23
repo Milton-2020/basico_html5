@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo de tipo number</title>
+</head>
+
+<body>
+    <header>
+        <h1>Campo de tipo number</h1>
+    </header>
+    <main>
+        <form action="enviar.php" method="GET" autocomplete="on" id="formulario11">
+            <label form="formulario11">Nombre: </label>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" size="80" maxlength="60" form="formulario11"><br>
+            <label form="formulario11">Direccion: </label>
+            <input type="text" name="direccion" placeholder="Ingrese su direccion" size="70"><br>
+            <label form="formulario11">Articulo: </label>
+            <input type="text" name="articulo"><br>
+            <label form="formulario11">Cantidad entre(2 y 12 partes)</label>
+            <input type="number" name="cantidad" min="2" max="12" step="2" value="2"><br>
+            <input type="submit" value="Enviar" name="enviar">
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados &copy; 2021</p>
+    </footer>
+</body>
+
+</html>

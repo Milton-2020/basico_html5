@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo de tipo range</title>
+</head>
+
+<body>
+    <header>
+        <h1>Campo de tipo range</h1>
+    </header>
+    <main>
+        <form action="enviar.php" method="GET" id="formulario14" autocomplete="on">
+            <label form="formulario14">Nombre: </label>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" size="70" maxlength="60"><br>
+            <label form="formulario14">Apellido: </label>
+            <input type="text" name="apellido" placeholder="Ingrese su apellido" size="70" maxlength="60"><br>
+            <label form="formulario14">Valoracion: </label>
+            <input type="range" min="1" max="10" step="1" name="valoracion" value="5"><br>
+            <input type="submit" name="enviar" value="Enviar">
+            <input type="reset" name="limpiar" value="Limpiar">
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados &copy; 2021</p>
+    </footer>
+</body>
+
+</html>

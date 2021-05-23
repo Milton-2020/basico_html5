@@ -353,10 +353,12 @@
                 <p>Este atributo es booleano es decir que con tan solo que aparesca en la etiqueta ya estaria activo.</p>
             </article>
             <article>
-                <header><h2>Ejemplo con el atributo readonly</h2></header>
+                <header>
+                    <h2>Ejemplo con el atributo readonly</h2>
+                </header>
                 <script>
-                    function Activar(){
-                        document.getElementById("marca").readOnly=!document.getElementById("marca").readOnly;
+                    function Activar() {
+                        document.getElementById("marca").readOnly = !document.getElementById("marca").readOnly;
                     }
                 </script>
                 <form action="enviar.php" method="POST" id="formulerio7" target="_blank">
@@ -371,12 +373,12 @@
                     <input type="submit" name="enviar" value="enviar">
                 </form>
             </article>
-                <header>
-                    <h2>Atributo required</h2>
-                </header>
-                <p>Permite especificar que la introducion de los datos en el campo an de ser obligatorios, es decir no se pueden dejar en blanco.</p>
-                <p>El atributo es booleano por consiguiente si se declara en el campo se activa</p>
-                <p>Dicho atributo se puede aplicar a campos de tipo texto, búsqueda, URL, fecha, email, contraseñas, casillas de verificacion, radios, numeros y ficheros.</p>
+            <header>
+                <h2>Atributo required</h2>
+            </header>
+            <p>Permite especificar que la introducion de los datos en el campo an de ser obligatorios, es decir no se pueden dejar en blanco.</p>
+            <p>El atributo es booleano por consiguiente si se declara en el campo se activa</p>
+            <p>Dicho atributo se puede aplicar a campos de tipo texto, búsqueda, URL, fecha, email, contraseñas, casillas de verificacion, radios, numeros y ficheros.</p>
             </article>
             <article>
                 <header>
@@ -437,12 +439,16 @@
                 <p>se ha de tener en consideración que para los campos que reflejan fecha, esta se ha de expresar en formato americano, es decir año, mes y dia.</p>
             </article>
             <article>
-                <header><h2>Atributo multiple</h2></header>
+                <header>
+                    <h2>Atributo multiple</h2>
+                </header>
                 <p>Permite especificar en campos de tipo file o email. Que se pueda introdicir en el campo uno o mas valores.</p>
                 <p>Es un atributo booleano, por lo tanto la simple aparición del mismo en la etiqueta del campo, activa la opción.</p>
             </article>
             <article>
-                <header><h2>Ejemplo con los atributos min, max, step y multiple</h2></header>
+                <header>
+                    <h2>Ejemplo con los atributos min, max, step y multiple</h2>
+                </header>
                 <form action="enviar.php" method="POST" accept-charset="UTF-8" autocomplete="on" name="formulario9">
                     <label form="formulario9">Nombre: </label>
                     <input type="text" placeholder="Ingrese su nombre" name="nombre" maxlength="60" size="80"><br>
@@ -459,13 +465,18 @@
                 </form>
             </article>
             <article>
-                <header><h2>Atributo list.</h2></header>
+                <header>
+                    <h2>Atributo list.</h2>
+                </header>
                 <p>Permite especificar una lista de datos, la cual será asociada al campo se forma que cuando se introduzca el valor sel mismo se pueda seleccionar uno de los datos especificados en la lista simplemente seleccionandola.</p>
                 <p>Para que funcione correctamente el atributo funciona en relacion con la etiqueta datalist, la cual permite especificar los datos de la lista en el interior de la etiqueta se ha de utilizar otra etiqueta denominada option.</p>
-                <p>La etiqueta option, tiene varios atrbutos asociados, como son: disabled, que especifica que el valor esta desactivado. El atributo label que permite especifica un texto corto para la opocion. El atributo selected, el cual predetermina el elemento seleccionado de la lista y el atributo value, el cual permite indicar el valor que será enviado al servidor.</p>
+                <p>La etiqueta option, tiene varios atrbutos asociados, como son: disabled, que especifica que el valor esta desactivado. El atributo label que permite especifica un texto corto para la opocion. El atributo selected, el cual predetermina
+                    el elemento seleccionado de la lista y el atributo value, el cual permite indicar el valor que será enviado al servidor.</p>
             </article>
             <article>
-                <header><h2>Ejemplo con el atributo list</h2></header>
+                <header>
+                    <h2>Ejemplo con el atributo list</h2>
+                </header>
                 <form action="enviar.php" method="GET" name="formulario10" autocomplete="on">
                     <label form="formulario10">Nombre: </label>
                     <input type="text" name="nombre" placeholder="Ingrese su nombre aca" maxlength="60" size="80"><br>
@@ -476,19 +487,23 @@
                         <option label="sedán" value="Volvo">Volvo</option>
                         <option label="sedán" value="BMW">BMW</option>
                         <option label="sedán" value="Mercedes">Mercedes</option>
-                    </datalist> 
+                    </datalist>
                     <input type="submit" name="enviar" value="Enviar datos">
                 </form>
             </article>
             <article>
-                <header><h2>Atributo pattern</h2></header>
-                <p>Permite especifarcar un patron de entrada de datos en el campo sobre el que se aplica, de forma que si el valor introducido no cumple el  patrón especifica, el campo no será validado por el formulario.</p>
+                <header>
+                    <h2>Atributo pattern</h2>
+                </header>
+                <p>Permite especifarcar un patron de entrada de datos en el campo sobre el que se aplica, de forma que si el valor introducido no cumple el patrón especifica, el campo no será validado por el formulario.</p>
                 <p>El atributo trabaja con los campos de tipo texto, search, tel, email y password. Como recomendación se indica que se utiliza el atributo global title, para mostrar ayuda sobre el patrón de forma que el usuario sepa como introducir el mismo.</p>
                 <p>Un patrón es una cadena de texto, compuesta por símbolos o caracteres, los cuales significa algo según sea compuestos. Los patrones que se utilizan son los denominados "Patrones de Javascript".</p>
                 <a href="http://html5pattern.com/">Patrones segun su utilizacion.</a>
             </article>
             <article>
-                <header><h2>Ejemplo atributo pattern</h2></header>
+                <header>
+                    <h2>Ejemplo atributo pattern</h2>
+                </header>
                 <form action="enviar.php" method="GET" autocomplete="on" name="formulario11">
                     <label form="formulario11">Nombre: </label>
                     <input type="text" name="nombre" placeholder="Ingrese su nombre" maxlength="60" size="80"><br>
@@ -500,7 +515,9 @@
                 </form>
             </article>
             <article>
-                <header><h2>Atributo type</h2></header>
+                <header>
+                    <h2>Atributo type</h2>
+                </header>
                 <p>Permite especificar ek tipo de campo que se quiere solicitar. El tipo por defecto que se aplica en caso de no aparecer el atributo es text, aunque se recomienda que el atributo siempre se especifique.</p>
                 <table border="2">
                     <caption>Posibles valores del atributo</caption>
@@ -529,47 +546,47 @@
                         </tr>
                         <tr>
                             <th>datetime</th>
-                            <td>Define un campo de tipo fecha y hora en formato año, mes, <br>dia, hora, minutos, segundos  y fracción de segundo, basado en <br>zona horaria.</td>
+                            <td>Define un campo de tipo fecha y hora en formato año, mes, <br>dia, hora, minutos, segundos y fracción de segundo, basado en <br>zona horaria. <br><a href="/Ejercicios/tipo_datetime.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>datetime-local</th>
-                            <td>Define un campo de tipo fecha y hora en formato año, mes, <br>dia, hora, minutos,segundos y fracción de segundos, sin base de <br>zona horaria.</td>
+                            <td>Define un campo de tipo fecha y hora en formato año, mes, <br>dia, hora, minutos,segundos y fracción de segundos, sin base de <br>zona horaria. <br><a href="/Ejercicios/tipo_datetime-local.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>email</th>
-                            <td>Define un campo de tipo correo electrónico.</td>
+                            <td>Define un campo de tipo correo electrónico. <br><a href="/Ejercicios/tipo_email.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>file</th>
-                            <td>Define un campo de tipo selector de ficheros, el cual visualiza <br>un boton y presenta un cuadro de dialogo, donde se puede <br>seleccionar el/los ficheros a seleccionar.</td>
+                            <td>Define un campo de tipo selector de ficheros, el cual visualiza <br>un boton y presenta un cuadro de dialogo, donde se puede <br>seleccionar el/los ficheros a seleccionar. <br><a href="/Ejercicios/tipo_file.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>hidden</th>
-                            <td>Define un campo de tipo oculto, normalmente son utilizados <br>por los desarrolladores para el envió de informacion al <br>servidor.</td>
+                            <td>Define un campo de tipo oculto, normalmente son utilizados <br>por los desarrolladores para el envió de informacion al <br>servidor. <br><a href="/Ejercicios/tipo_hidden.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>image</th>
-                            <td>Define un campo de tipo botón de envió representado <br>mediante una imagen especifica.</td>
+                            <td>Define un campo de tipo botón de envió representado <br>mediante una imagen especifica. <br><a href="/Ejercicios/tipo_image.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>month</th>
-                            <td>Define un campo de tipo control de mes y año, presentando <br>un selector de fecha.</td>
+                            <td>Define un campo de tipo control de mes y año, presentando <br>un selector de fecha. <br><a href="/Ejercicios/tipo_month.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>number</th>
-                            <td>Define un campo de tipo numérico entero.</td>
+                            <td>Define un campo de tipo numérico entero. <br><a href="/Ejercicios/tipo_number.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>password</th>
-                            <td>Define un campo de tipo contreseña, este topo de campo <br>visualiza normalmente asteriscos en ves de mostrar el <br>contenido que se teclea.</td>
+                            <td>Define un campo de tipo contreseña, este topo de campo <br>visualiza normalmente asteriscos en ves de mostrar el <br>contenido que se teclea. <br><a href="/Ejercicios/tipo_password.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>radio</th>
-                            <td>Define un botón de radio, para selección único, es decir <br>seleccionar una opción entre varios posibles.</td>
+                            <td>Define un botón de radio, para selección único, es decir <br>seleccionar una opción entre varios posibles. <br><a href="/Ejercicios/tipo_radio.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>range</th>
-                            <td>Define un campo de tipo deslizador, en el cual arrastrando el <br>mismo se selecciona un rango de valor numérico.</td>
+                            <td>Define un campo de tipo deslizador, en el cual arrastrando el <br>mismo se selecciona un rango de valor numérico. <br><a href="/Ejercicios/tipe_range.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>reset</th>
@@ -577,7 +594,7 @@
                         </tr>
                         <tr>
                             <th>search</th>
-                            <td>Define un campo de tipo búsqueda, para teclear una cadena <br>de búsqueda, no realiza búsquedas en el sitio.</td>
+                            <td>Define un campo de tipo búsqueda, para teclear una cadena <br>de búsqueda, no realiza búsquedas en el sitio. <br><a href="/Ejercicios/tipo_search.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>submit</th>
@@ -585,28 +602,27 @@
                         </tr>
                         <tr>
                             <th>tel</th>
-                            <td>Define un campo de tipo introducción de telefono.</td>
+                            <td>Define un campo de tipo introducción de telefono. <br><a href="/Ejercicios/tipo_tel.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>text</th>
-                            <td>Define un campo de tipo texto, el ancho por defeceto del <br>campo es de 20 caracteres.</td>
+                            <td>Define un campo de tipo texto, el ancho por defeceto del <br>campo es de 20 caracteres. <br><a href="/Ejercicios/tipo_text.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>time</th>
-                            <td>Define un campo para la introducción de horas.</td>
+                            <td>Define un campo para la introducción de horas. <br><a href="/Ejercicios/tipo_time.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>url</th>
-                            <td>Define un campo para la introducción de direcciones web <br>(url´s).</td>
+                            <td>Define un campo para la introducción de direcciones web <br>(url´s). <br><a href="/Ejercicios/tipo_url.html">Ejemplo</a></td>
                         </tr>
                         <tr>
                             <th>week</th>
-                            <td>Define un campo para la introducción de semanas y mes.</td>
+                            <td>Define un campo para la introducción de semanas y mes. <br><a href="/Ejercicios/tipo_week.html">Ejemplo</a></td>
                         </tr>
                     </tbody>
                 </table>
             </article>
-            <a href="Ejemplos"></a>
         </section>
     </main>
     <footer>
