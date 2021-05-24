@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milotn Henrández">
+    <meta name="keywords" content="type, button, onclick, img, src, width, height">
+    <meta name="generator" content="Ejemplo con html5">
+    <meta name="description" content="ejemplo con la etiqueta button">
+    <title>Uso de la etiqueta button</title>
+</head>
+
+<body>
+    <header>
+        <h1>Uso de la etiqueta Button</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <header>
+                    <h2>Etiqueta Button</h2>
+                </header>
+                <p>Permite definir un borton sobre el cual se realizan pulsaciones de raton. Si la etiqueta se usa dentro de un formulario practicamente se puede usar los mismos atributos de la etiqueta input.</p>
+                <p>Aunque se recomienda que para integrar botnes en un formulaio se use la etiqueta input.</p>
+                <p>Por otra parte la utilizacion de la etiqueta button fuera de un formulario de suele usar par ala ejecucion de alguna funcion en JavaScript. La diferencia con los botones de un formulario, es que con esta etiqueta se puede utilizar en el
+                    contenido de la etiqueta texto o imágenes.</p>
+                <p>Se recomienda que se use el atributo type de la etiqueta para especificar el valor button, ya que dependiendo del navegador el tipo por defecto para la etiqueta se puede interpretar de diferente forma.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Ejemplo de la etiqueta buttton.</h2>
+                </header>
+                <script>
+                    function botonNormal() {
+                        alert("Se a pulsado el boton normal.");
+                    }
+
+                    function botonImagen() {
+                        alert("Se a pulsado el boton imagen.");
+                    }
+                </script>
+                <button type="button" onclick="botonNormal()">Boton Normal</button><br><br>
+                <button type="button" onclick="botonImagen()"><img src="/imagenes/3.jpg" width="60" height="60" alt="Imagen de zelda"></button>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

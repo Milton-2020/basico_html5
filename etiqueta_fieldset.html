@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="generator" content="Ejemplo con HTML5">
+    <meta name="keywords" content="fieldset, disabled, name, form, type, method, GET, POST, autocomplete, id">
+    <meta name="description" content="Ejemplo con la etiqueta fieldset y legend">
+    <title>Etiqueta fieldset y legend</title>
+</head>
+
+<body>
+    <header>
+        <h1>Uso de las etiquetas fieldset y legend</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <header>
+                    <h2>Etiqueta fieldset</h2>
+                </header>
+                <p>Se utiliza como contenido dentro del formularios. Y su funcion es la de realizar grupos de campos dentro del formulario. Estos grupos de campos son representados mediante un marco de borde al rededor de los campos contenidos en el grupo.</p>
+                <h3>Atributos que se pueden aplicar.</h3>
+                <p><strong>Atributo disabled: </strong>Especifica que los campos incluidos en la etiqueta, estan desactivados.</p>
+                <p>Es un atributo booleano, por tanto su sola aparicion en la etiqueta, realiza la activacion del mismo.</p>
+                <p><strong>Atributo form: </strong>permite especificar a que formulario pertenece el campo que se está solicitando especificando el atributo identificativo del formulario (id).</p>
+                <p><strong>Atributo name: </strong>especifica el nombre que se quiere asignar al grupo de control del formulario. El nombre puede ser usado posterior mente bien por un lenguaje cliente, para interactuar con el formulario, bien con lenguaje
+                    de servidor para procesar los datos resividos e incluso por hojas de estilo.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Etiqueta legend</h2>
+                </header>
+                <p>Permite establecer el titulo del grupo de elemtos en el contenido de la misma, y se suele ocupar justo detras de la etiqueta de apertura del grupo.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Ejemplo con la etiquetas fieldset y legend</h2>
+                </header>
+                <form action="enivar.php" method="GET" autocomplete="off" id="formulario">
+                    <fieldset>
+                        <legend>Datos personales:</legend>
+                        <label form="formulario">Nombre:</label>
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre" form="formulario" maxlength="60" size="80"><br>
+                        <label form="formulario">Apelldio</label>
+                        <input type="text" name="apellido" placeholder="Ingrese su apellido" form="formulario" maxlength="60" size="70"><br>
+                        <label form="formulario">Telefono: </label>
+                        <input type="tel" name="telefono" placeholder="Ingrese su numero" size="40">
+                    </fieldset>
+                    <input type="submit" name="enviar" value="Enviar">
+                </form>
+                <br>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados &copy; 2021</p>
+    </footer>
+</body>
+
+</html>
