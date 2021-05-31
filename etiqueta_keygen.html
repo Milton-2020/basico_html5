@@ -5,13 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="">
-    <title>Document</title>
+    <meta name="author" content="Milton Hernández">
+    <meta name="generator" content="Ejemplo de HTML5">
+    <meta name="keywords" content="keygen, autofocus, disabled, challenge, form, keytype, name">
+    <meta name="description" content="Ejemplo con el atributo keygen">
+    <title>Etiqueta keygen</title>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
+    <header><h1>uso de la etiqueta keygen y sus atributos</h1></header>
+    <main>
+        <section>
+            <article>
+                <h2>Etiqueta keygen</h2>
+                <p>Permite crear una clave codificada, de forma que sean enviadas junto con los datos del formulario, para añadir un nivel más de seguridad en el envío y recepción de los mismos.</p>
+                <p>Cuando el formulario es enviado la clave privada es almacenada en el ordenador cliente, mientras que la clave pública, es enviada al servidor.</p>
+            </article>
+            <article>
+                <h2>Atributos.</h2>
+                <p><strong>autocus: </strong>el atributo permite especificar cuál es el control que recibe el "foco", cuando se realiza la carga del documento weben el navegador. Es un atributo booleano y solo con aparecer significa que está activado.</p>
+                <p><strong>disabled: </strong>el atributo especificar que el elemento sobre el que se a aplicado, se ha de desactivar. Un elemento desactivado está bloqueado y no se puede cambiar ni realizar clic sobre el mismo.</p>
+                <p><strong>form: </strong>el atributo especificar a qué formulario pertenece el campo que se astá solicitando espesificando el atributo identificador del formulaio. Como valor se ha de especificar el valor del atributo id, asociado al formulario donde se encuentra incluido la etiqueta.</p>
+                <p><strong>name: </strong> el atributo permite especificar el nombre  que se quiere asignar al campo del formulario. el nombre puede ser utilizado posteriormete bien por lenguajes cliente, para interactuar con el formulario, bien con leguaje de servidor para procesar los datos recibidos.</p>
+                <p><strong>challege: </strong>El atributo permite especificar que las claves generadas sean cambiadas automáticamente, despúes de haberse producido el envió de los datos.</p>
+                <p><strong>keytype: </strong>El atributo permite especificar el tipo de codificacion que se quiere utilizar para el cifrado de las claves. Se puede seleccionar tres tipos de codificacion: <i>rsa,</i><i>dsa,</i> y <i>ec.</i> Siendo la utilizada por defecto el primer tipo de codificación.</p>
+            </article>
+            <article>
+                <header><h2>Ejemplo con la etiqueta keygen</h2></header>
+                <form action="enviar.php" name="formulario_datos" id="formulario" method="GET">
+                    <fieldset form="formulario" name="grupo_datos_personales">
+                        <legend>Datos Personales.</legend>
+                        <label for="nombre" form="formulario">Nombre: </label>
+                        <input type="text" name="nombre1" id="nombre" value="" placeholder="Ingrese su nombre"><br>
+                        <label for="localidad" form="formulario">Localidad: </label>
+                        <input type="text" name="localida1" id="localida" value="" placeholder="Ingrese su localidad"><br>
+                        <label for="codificacion" form="formulario">Encriptado: </label>
+                        <keygen id="codificacion" keytype="rsa">
+                    </fieldset>
+                    <input type="submit" name="enviar" value="Enviar">
+                </form>
+            </article>
+        </section>
+    </main>
     <footer>
         <p>Todo los derechos reservados &copy;2021</p>
     </footer>
