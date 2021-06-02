@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="description" content="Ejemplo con la etiqueta select">
+    <meta name="generator" content="Ejemplo con HTML5">
+    <title>Etiqueta select</title>
+</head>
+<body>
+    <header><h1>Uso de la etiqueta select</h1></header>
+    <main>
+        <section>
+            <article>
+                <header><h2>Etiqueta select.</h2></header>
+                <p>Permite la creación de lista desplegables o listas abiertas, desde la que podemos realizar la selección de una o varias de las opciones que se presentan en la misma.</p>
+                <p>La etiqueta se configura en conjunto con otra etiqueta denominada <strong>option</strong>, la cual permite especificar las opciones que aparecen en la lista.</p>
+            </article>
+            <article>
+                <header><h2>Atributos:</h2></header>
+                <p><strong>autofocus: </strong>permite especificar cual es el control que recibe el "foco", cuando se realiza la carga del documento web en el navegador. Es un atributo booleano y solo con aparecer significa que esta activo.</p>
+                <p><strong>disabled: </strong>permite especificar que el elemento sobre el cual el que se aplica, se ha de desactivar. Un elemento desactivado está bloqueado y no se puede cambiar ni realizar clic sobre el mismo.</p>
+                <p><strong>form: </strong>permite especificar a qué formulario pertenece el campo que se está solicitando especificando el atributo identificador del formulario. Como valor se ha de especificar el valor del atributo id, asociado al formulario donde se encuantra incluido la etiqueta.</p>
+                <p><strong>multiple: </strong>permite especificar en campos de tipo select. Que se puedan seleccionar una o más opciones de la lista que se presenta.</p>
+                <p><strong>name: </strong>permite especificar el nombre que se quiere asignar al campo de formulario.</p>
+                <p><strong>required: </strong>el atributo aplicado a un campo permite especificar que la introducción de datos en el campo ha de ser obligatorio, es decir no se puede dejar en blanco.</p>
+                <p><strong>size: </strong>el atributo permite especificar un valor numérico, el cual corresponderá con las opciones visibles que se presentan de la lista en el campo.</p>
+                <p>por otra parte la etiqueta para especificar las opciones depende de la etiqueta "option"</p>
+            </article>
+            <article>
+                <header><h2>Etiqueta option.</h2></header>
+                <p>permite especificar las opciones de la lista creada con la etiqueta select.</p>
+            </article>
+            <article>
+                <header><h2>Atributos: </h2></header>
+                <p><strong>disabled: </strong>especifica que el elemeto sobre se aplica, se ha de desactivar. Un elemento desactivado está bloqueado y no se puede cambiar ni realizar clic sobre el mismo.</p>
+                <p><strong>label: </strong>permite especificar una etiqueta corta en formato de texto, para la opción que se está especificando.</p>
+                <p><strong>selected: </strong>permite especificar que la opción sobre la cual se aplica, es la opción preseleccionado cuando el documento es cargado en el navagador.</p>
+                <p><strong>value: </strong>el atributo especifica el valor que se quiere asignar a la opción que se presenta en la lista de forma que este valor es el enviado, cuando se pulsa el botón de envió del formulario.</p>
+            </article>
+            <article>
+                <header><h2>Etiqueta optgroup.</h2></header>
+                <p>la cual pemite especificar grupos de opciones, agrupando las opciones comunes por grupos. Esta última etiqueta solo dispone de dos atributo.</p>
+            </article>
+            <article>
+                <header><h2>Atributos: </h2></header>
+                <p><strong>label: </strong>el cual permite especificar el valor del nombre del grupo.</p>
+                <p><strong>disabled: </strong>pemite especificar que el grupo este activado o desactivado.</p>
+            </article>
+            <article>
+                <header><h2>Ejemplo con la etiqueta select</h2></header>
+                <form action="enviar.php" id="formulario" name="formulario1" autocomplete="off" method="GET">
+                    <fieldset form="formulario" name="grupo_datos">
+                        <legend>Datos personales.</legend>
+                        <label for="nombre" form="formulario">Nombre: </label>
+                        <input type="text" form="formulario" name="nombre1" id="nombre" placeholder="Ingrese su nombre" autofocus><br>
+                        <label for="localidad" form="formulario">Localidad: </label>
+                        <input type="text" form="formulario" name="localidad1" id="localidad" placeholder="Ingrese su localidad">
+                    </fieldset>
+                    <fieldset form="formulario" name="datos_coche">
+                        <legend>Otros Datos</legend>
+                        <label for="coche" form="formulario">Veiculo</label>
+                        <select name="coche1" id="coche" required size="4">
+                            <option value="niguno" selected>Ninguno</option>
+                            <optgroup label="Coches Suizos">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                            </optgroup>
+                            <optgroup label="Coches Alemanes">
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </optgroup>
+                        </select><br>
+                        <label for="estado_civil" form="formulario">Estado Civil</label>
+                        <select name="estado_civil1" id="estado_civil">
+                            <option value="ninguno" selected>Ninguno</option>
+                            <option value="casdo">Casado</option>
+                            <option value="separado">Separado</option>
+                            <option value="divorciado">Divorciado</option>
+                            <option value="viudo">Viudo</option>
+                        </select>
+                    </fieldset>
+                </form>
+                <input type="submit" name="enviar" value="Enviar">
+            </article>
+        </section>
+    </main>
+    <footer><p>Todos los derechos reservados &copy; 2021</p></footer>
+</body>
+</html>
