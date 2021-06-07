@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="generator" content="Ejemplo con html5">
+    <meta name="keywords" content="textarea, autofocus, form, cols, rows, maxlength, name, disabled, wrap, required, readonly, placeholder">
+    <meta name="description" content="Ejemplo con la etiqueta textarea">
+    <title>Etiqueta textarea</title>
+</head>
+<body>
+    <header><h1>Uso de la etiqueta textarea</h1></header>
+    <main>
+        <section>
+            <article>
+                <header><h2>Etiqueta textarea.</h2></header>
+                <p>Permite definir una area de texto similar a un campo de texto, pero con la diferencia que se pueden indicar tanto el número de la fila, como de columnas, con las que se quiere representar visualmente el control, no teniendo un límite definido para el numero de caracteres que se pueden teclear en el area de texto.</p>
+                <p>se suele utolozar para solicitar textos explicativos, opiniones, comentarios, etc.</p>
+                <p>Normalmente el tipo de letra utilizado por el control es <i>Courier,</i> aunque mediante hojas de estilos es posible variar las opciones del control.</p>
+            </article>
+            <article>
+                <header><h2>Atributos.</h2></header>
+                <p><strong>autofocus: </strong>el atributo permite especificar cuál es el control que recibe el "foco", cuando se realiza la carga del documento web en el navegador. Es un atributo booleano y solo con aparecer significa que está activado.</p>
+                <p><strong>disabled: </strong>permite especificar que el elemento sobre el que se aplica, se ha de desactivar. Un elemento desactivado está bloqueado y no se puede cambiar ni realizar clic sobre el mismo.</p>
+                <p><strong>required: </strong>el atributo aplicado a un campo permite especificar que la utrodicción de datos en el campo ha de ser obligatoria, es decir no se puede dejar en blanco.</p>
+                <p><strong>readonly: </strong>el atributo permite especificar que un campo sea de solo lectura, es decir su contenido será visible y podrá ser seleccionado, pero no se podrá modificar. Se suele utilizar en conjunto con lenguajes de programación de cliente, para alterar el valor de solo lectura, cuando se cumplen ciertas condiciones en los datos.</p>
+                <p><strong>name: </strong>el atributo permite especificar el nombre que se asigna al campo del formulairo.</p>
+                <p><strong>form: </strong>el atributo permite especificar a qué formulario pertenece el campo que se está solicitando especificando el atributo identificador del formulario. Como valor se ha de especificar el valor del atributo id, asociado al formulario donde se encuentra indicada la etiqueta</p>
+                <p><strong>maxlength: </strong>el atributo permite especificar el número de caracteres máximos que se permite teclear en una etiqueta de tipo entrada.</p>
+                <p><strong>cols: </strong>el atributo permite especificar el número de columnas visibles, que el control visualiza.</p>
+                <p><strong>rows: </strong>el atributo permite especificar el número de filas visibles, que el contro visualiza en su representación en el navegador.</p>
+                <p><strong>wrap: </strong>el atributo permite especificar como se realiza el ajuste de palabras en el contenido del control, se puede seleccionar entre dos posibles valores <i>hard</i> y <i>soft.</i></p>
+            </article>
+            <article>
+                <header><h2>Ejemplo con la etiqueta textarea y sus atributos.</h2></header>
+                <form action="envia.php" id="formulario" name="formulario1" autocomplete="off" method="GET">
+                    <fieldset form="formulario" name="datos_formulario">
+                        <legend>Datos Personales</legend>
+                        <label for="nombre" form="formulario">Nombre</label>
+                        <input type="text" form="formulario" id="nombre" name="nombre1" placeholder="Ingrese su nombre" size="60" ><br>
+                        <label for="localidad" form="formulario">Localidad</label>
+                        <input type="text" form="formulario" name="localidad1" id="localidad" placeholder="Ingrese su localidad" maxlength="60" size="70"><br>
+                    </fieldset>
+                    <br><label form="formulario">Comentarios...</label><br>
+                    <textarea name="comentario" id="comentario1" cols="70" rows="7" placeholder="Ingrese sus comentarios."></textarea><br>
+                    <input type="submit" name="enviar" value="Enviar">
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer><p>Todos los derechos reservados &copy; 2021</p></footer>
+</body>
+</html>

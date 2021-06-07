@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="generator" content="Ejemplo con HTML5">
+    <meta name="description" content="Ejemplo de un formulario">
+    <title>Ejemplo CV</title>
+</head>
+<body>
+    <header><h1>Rellena tu CV</h1></header>
+    <main>
+        <form action="enviar.php" method="GET" id="formulario" autocomplete="off">
+            <label for="nombre" form="formulario">Nombre: </label><br>
+            <input type="text" id="nombre" name="nombre1" size="30"><br>
+            <label for="apellido" form="formulario">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido1" form="formulario" size="70"><br>
+            <label for="password" form="formulario">Contraseña: </label><br>
+            <input type="password" form="formulario" id="password" name="password1" size="30"><br>
+            <label for="dui" form="formulario">DUI: </label><br>
+            <input type="text" id="dui" form="formulario" name="dui1" size="10"><br>
+            <label for="sexo" form="formulario">Sexo: </label><br>
+            <input type="radio" checked name="sexo" id="hombre" value="Hombre">
+            <label for="hombre" form="formulario">Hombre</label><br>
+            <input type="radio" name="sexo" id="mujer" value="mujer" form="formulario">
+            <label for="mujer" form="formulario">Mujer</label><br><br>
+            <label for="imagen" form="formulario">Incluir mi foto</label>
+            <input type="text" name="imagen">
+            <input type="submit" name="imagen" value="Elegir..."><br><br>
+            <input type="checkbox" id="novedades" checked>
+            <label for="novedades" form="formulario">Suscribirme al boletín de novedades</label><br><br>
+            <input type="submit" name="guardar" value="Guardar Cambios">
+            <input type="submit" name="borrar" value="Borrar los datos introducidos">
+        </form>
+        <a href="/ejercicio_final/ejemplos.html">Inicio</a>
+    </main>
+    <footer><p>Todos los derechos reservados &copy; 2021</p></footer>
+</body>
+</html>

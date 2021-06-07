@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="generator" content="Ejemplo con HTML5">
+    <meta name="description" content="Ejemplo con formularios">
+    <title>Formulario</title>
+</head>
+<body>
+    <header><h1>Formulario estructurado</h1></header>
+    <main>
+        <form action="enviar.php" accept-charset="UTF-8" method="GET" autocomplete="off" id="formulario" name="formulario1">
+            <fieldset form="formulario" name="datos_personales">
+                <legend>Datos personales</legend>
+                <label for="nombre" form="formulario">Nombre: </label><br>
+                <input type="text" size="40" id="nombre" name="nombre1"><br>
+                <label for="apellido" form="formulario">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido1" size="40"><br>
+                <label for="dui" form="formulario">DUI: </label><br>
+                <input type="text" id="dui" name="dui1" size="20">
+            </fieldset>
+            <fieldset form="formulario" name="datos_conexion">
+                <legend>Datos de conexión</legend>
+                <label for="usuario" form="formulario">Nombre de usuario:</label><br>
+                <input type="text" id="usuario" name="usuario1" size="40"><br>
+                <label for="password" form="formulario">Contraseña:</label><br>
+                <input type="password" id="password" name="password1" size="40"><br>
+                <label for="repetir" form="formulario">Repetir la Contraseña:</label><br>
+                <input type="password" id="repetir" name="repetir1" size="40"> 
+            </fieldset>
+        </form>
+    </main>
+    <footer><p>Todos los derechos reservados &copy; 2021</p></footer>
+</body>
+</html>
