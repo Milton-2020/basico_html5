@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="generator" content="Ejemplo con HTML5">
+    <meta name="description" content="Ejemplo con iframe">
+    <meta name="keywords" content="iframe, src, width, heigth, sandbox, seamless">
+    <title>Etiqueta iframe</title>
+</head>
+
+<body>
+    <header>
+        <h1>Uso de la etiqueta iframe</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <header>
+                    <h2>Etiqueta iframe.</h2>
+                </header>
+                <p>Permire la incerción de un marco en línea, dentro del documento web. Un marco permite la incerción de un documento como puede ser otro documento web, un mapa de google maps, etc.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Atributos</h2>
+                </header>
+                <p><strong>width: </strong>permite especificar el ancho en pixeles.</p>
+                <p><strong>height: </strong>permite especificar el alton en pixeles.</p>
+                <p><strong>name: </strong>permite especificar el nombre que se le quiere asignar al marco incertado en el documento web.</p>
+                <p><strong>src: </strong>el atributo permite especificarel origen del objeto que se quiere incertar en el marco, es decir su ubicasión, bien mediante una ruta absoluta o relativa.</p>
+                <p><strong>srdoc: </strong>permite especificar el contenido del objeto en línea, es desir si se especifica contenido en este atributo y el navegador soporta el mismo, se sobreescribe el contenido del atributo src, precentánose el contenido
+                    especificado en este atriburo.</p>
+                <p><strong>seamless: </strong>el atributo permite especificar que el marco se precente sin barras de desplasamiento ni bordes, de esta forma su integración dentro del documento web, es mas suave. Es un atributo booleano, para activarlo solo
+                    ha de estar precente en la etiqueta.</p>
+                <p><strong>sandbox: </strong>el atributo permite especificar ciertas restricciones para el contenido del marco, siempre y cuando se utilize el atributo. Si se especifica el atributo con un valor vacío(""), se aplican todas las restricciones,
+                    en otro caso se an de especificar las restricciones separadas por espacio en blanco dentro de la cadena de texto que se utiliza como valor del atributo.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Valores del atributo sandbox.</h2>
+                </header>
+                <table border="2">
+                    <thead>
+                        <th>Valor del atributo</th>
+                        <th>Descripción</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>""</th>
+                            <td>Se aplican todas las restrucciones.</td>
+                        </tr>
+                        <tr>
+                            <th>allow-same-origin</th>
+                            <td>El contenido del marco se trata de la misma forma que el <br>documento web que lo contiene.</td>
+                        </tr>
+                        <tr>
+                            <th>allow-top-navigation</th>
+                            <td>Permite que el contenido del marco, pueda interactuar con el <br> contenido del documento web que lo contiene en la <br>"navegación" por el mismo.</td>
+                        </tr>
+                        <tr>
+                            <th>allow-forms</th>
+                            <td>Permite que el contenido del marco pueda realizar envió de <br> formularios.</td>
+                        </tr>
+                        <tr>
+                            <th>allow-script</th>
+                            <td>Permite que el contenido del marco pueda ejecutar script.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <header>
+                    <h2>Mapa incertado google.</h2>
+                </header>
+                <iframe width="425" height="350" src="https://www.google.es/maps/search/huerto+del+cura+elche+maps/@38.3281965,-0.7743612,11z/data=!3m1!4b1" frameborder="0"></iframe><br>
+                <small><a href="https://www.google.es/maps/search/huerto+del+cura+elche+maps/@38.3281965,-0.7743612,11z/data=!3m1!4b1" style="color: darkmagenta;" target="_blank">Ver mapa mas grande</a></small>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados &copy; 2021</p>
+    </footer>
+</body>
+
+</html>

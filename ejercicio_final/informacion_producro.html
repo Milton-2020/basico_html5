@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="generator" content="Ejemplo con HTML5">
+    <meta name="description" content="Ejemplo de formulario">
+    <title>Ejemplo Productos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Informacion sobre el producto</h1>
+    </header>
+    <main>
+        <form action="enviar.php" method="GET" accept-charset="UTF-8" autocomplete="off" id="formulario">
+            <fieldset form="formulario" name="datos_basicos">
+                <legend>Datos básicos</legend>
+                <label for="nombre" form="formulario">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre" size="70"><br><br>
+                <label for="descripcion" form="formulario">Descripción</label><br>
+                <textarea name="descripcion" id="descripcion" cols="53" rows="6">
+                </textarea><br><br>
+                <label for="foto" form="formulario">Foto</label>
+                <input type="text" size="15">
+                <input type="submit" value="Elegir..." name="elegir"><br><br>
+                <input type="checkbox" value="visitas" name="visitas">
+                <label form="formulario">Añadir contador de visitas</label>
+            </fieldset>
+            <fieldset form="formulario" name="datos_economicos">
+                <legend>Datos económicos</legend>
+                <label form="formulario">Precio</label>
+                <input type="text" size="6" name="precio">
+                <label form="formulario">$</label>
+                <label form="formulario">Inpuetos</label>
+                <select name="inpuseto" id="inpuesto">
+                    <option value="4%">4%</option>
+                    <option value="7%">7%</option>
+                    <option value="16%">16%</option>
+                    <option value="25%">25%</option>
+                </select><br><br>
+                <label for="promocion" form="formulario">Promoción</label><br>
+                <input type="radio" checked name="promocion" id="ninguno1" value="nunguno" form="formulario">
+                <label form="formulario" for="ninguno1">Nunguno</label><br>
+                <input type="radio" name="promocion" value="trasporte_gratis" id="gratis">
+                <label form="formulario" for="gratis">Trasporte gratis</label><br>
+                <input type="radio" name="promocion" value="descuento" id="descuento1" form="formulario">
+                <label for="descuento1" form="formulario">Descuento 5%</label>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados &copy; 2021</p>
+    </footer>
+</body>
+
+</html>

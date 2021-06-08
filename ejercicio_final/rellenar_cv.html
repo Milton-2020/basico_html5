@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milton Hernández">
+    <meta name="generator" content="Ejemplo con html5">
+    <meta name="description" content="Ejemplo de formulario y select">
+    <meta name="keywords" content="form, id, sectect, selected, name, for, checkbox, radio">
+    <title>Ejemplo CV</title>
+</head>
+
+<body>
+    <header>
+        <h1>Rellene tu CV</h1>
+    </header>
+    <main>
+        <form action="enviar.php" method="GET" autocomplete="off" id="formulario" name="formulario1" accept-charset="UTF-8">
+            <fieldset form="formulario" name="datos_personales">
+                <legend>Datos personales</legend>
+                <label for="ciudad" form="formulario">Ciudad</label><br>
+                <select name="nombre_ciudad" id="nombre_ciudad">
+                    <option value="seleccion" selected>-Selecciona-</option>
+                    <option value="san salvador" label="el salvador">San Salvador</option>
+                    <option value="apopa">Apopa</option>
+                    <option value="chalatenago">Chalatenango</option>
+                    <option value="san_miguel">San Miguel</option>
+                    <option value="santa_ana">Santa Ana</option>
+                </select><br><br>
+                <label form="formulario">Fecha de nacimiento</label><br>
+                <input type="text" name="dia" size="3">
+                <label form="formulario">de</label>
+                <select name="mes" id="mes">
+                    <option value="enero">Enero</option>
+                    <option value="febrero">Febrero</option>
+                    <option value="marzo">Marzo</option>
+                    <option value="abril">Abril</option>
+                    <option value="mayo" selected>Mayo</option>
+                    <option value="juni">Junio</option>
+                    <option value="julio">Julio</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="septiembre">Septiembre</option>
+                    <option value="octubre">Octubre</option>
+                    <option value="noviembre">Noviembre</option>
+                    <option value="diciembre">Diciembre</option>
+                </select>
+                <label for="año" form="formulario">de</label>
+                <input type="text" id="año" name="año" size="4"><br><br>
+                <label form="formulario">Temas de interés</label><br>
+                <select name="tema" id="tema" size="5">
+                    <option value="base_datos">Administracion de bases de datos</option>
+                    <option value="analisis_programacion">Análisis y programación</option>
+                    <option value="arquitectura">Arquitectura</option>
+                    <option value="calidad">Calidad</option>
+                    <option value="bussiness">ERP, CRM, Bussiness Intelligence</option>
+                    <option value="sistema">Sistemas operativos</option>
+                </select>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados &copy; 2021</p>
+    </footer>
+</body>
+
+</html>
